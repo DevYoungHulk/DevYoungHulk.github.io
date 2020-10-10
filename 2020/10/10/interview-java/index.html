@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="java 面试基础">
+<meta property="og:type" content="article">
+<meta property="og:title" content="interview&#x2F;java">
+<meta property="og:url" content="http://example.com/2020/10/10/interview-java/index.html">
+<meta property="og:site_name" content="新消息">
+<meta property="og:description" content="java 面试基础">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-10-10T08:08:01.000Z">
+<meta property="article:modified_time" content="2020-10-10T08:29:08.570Z">
+<meta property="article:author" content="Hulk Yang">
+<meta property="article:tag" content="interview">
+<meta property="article:tag" content="java">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2020/10/10/interview-java/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>interview/java | 新消息</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">新消息</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/10/10/interview-java/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Hulk Yang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="新消息">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          interview/java
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-10-10 16:08:01 / 修改时间：16:29:08" itemprop="dateCreated datePublished" datetime="2020-10-10T16:08:01+08:00">2020-10-10</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a>
+                </span>
+            </span>
+
+          
+            <div class="post-description">java 面试基础</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="java-基础"><a href="#java-基础" class="headerlink" title="java 基础"></a>java 基础</h2><p><a target="_blank" rel="noopener" href="https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md">https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md</a></p>
+<h2 id="Java-疑难点"><a href="#Java-疑难点" class="headerlink" title="Java 疑难点"></a>Java 疑难点</h2><p><a target="_blank" rel="noopener" href="https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/Java%E7%96%91%E9%9A%BE%E7%82%B9.md">https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/Java%E7%96%91%E9%9A%BE%E7%82%B9.md</a></p>
+<h2 id="什么是-Java-虚拟机（JVM）？为什么-Java-被称作是“平台无关的编程语言”？"><a href="#什么是-Java-虚拟机（JVM）？为什么-Java-被称作是“平台无关的编程语言”？" class="headerlink" title="什么是 Java 虚拟机（JVM）？为什么 Java 被称作是“平台无关的编程语言”？"></a>什么是 Java 虚拟机（JVM）？为什么 Java 被称作是“平台无关的编程语言”？</h2><p>Java 虚拟机是一个可以执行 Java 字节码的虚拟机进程。Java 源文件被编译成能被 Java 虚拟机执行的字节码文件。</p>
+<p>java 被设计成允许应用程序可以运行在任意的平台，而不需要程序员为每一个平台单独重写或者是重新编译。Java 虚拟机让这个变为可能，因为它知道底层硬件平台的指令长度和其他特性。</p>
+<h2 id="JDK、JRE、JVM-分别是什么关系？"><a href="#JDK、JRE、JVM-分别是什么关系？" class="headerlink" title="JDK、JRE、JVM 分别是什么关系？"></a>JDK、JRE、JVM 分别是什么关系？</h2><p>JDK 即为 Java 开发工具包，包含编写 Java 程序所必须的编译、运行等开发工具以及 JRE。开发工具如：用于编译 Java 程序的 javac 命令、用于启动 JVM 运行 Java 程序的 Java 命令、用于生成文档的 Javadoc 命令以及用于打包的 jar 命令等等。</p>
+<p>JRE 即为 Java 运行环境，提供了运行 Java 应用程序所必须的软件环境，包含有 Java 虚拟机（JVM）和丰富的系统类库。系统类库即为 Java 提前封装好的功能类，只需拿来直接使用即可，可以大大的提高开发效率。</p>
+<p>JVM 即为 Java 虚拟机，提供了字节码文件（.class）的运行环境支持。 简单说，就是 JDK 包含 JRE 包含 JVM。</p>
+<h2 id="Java-支持的数据类型有哪些？"><a href="#Java-支持的数据类型有哪些？" class="headerlink" title="Java 支持的数据类型有哪些？"></a>Java 支持的数据类型有哪些？</h2><p>Java 支持的数据类型包括基本数据类型和引用类型。基本数据类型如下。 整数值型：byte，short，int，long<br>字符型：char<br>浮点类型：float，double<br>布尔型：boolean<br>整数默认 int 型，小数默认是 double 型。Float 和 long 类型的必须加后缀。比如 float f = 100f。</p>
+<p>首先知道 String 是引用类型不是基本类型，引用类型声明的变量是指该变量在内存中实际存储的是一个引用地址，实体在堆中。引用类型包括类、接口、数组等。String 类还是 final 修饰的。</p>
+<h2 id="什么是自动拆装箱？"><a href="#什么是自动拆装箱？" class="headerlink" title="什么是自动拆装箱？"></a>什么是自动拆装箱？</h2><p>自动装箱和拆箱就是基本类型和引用类型之间的转换，至于为什么要转换，因为基本类型转换为引用类型后，就可以 new 对象，从而调用包装类中封装好的方法进行基本类型之间的转换或者 toString（当然用类名直接调用也可以，便于一眼看出该方法是静态的），还有就是如果集合中想存放基本类型，泛型的限定类型只能是对应的包装类型。</p>
+<h2 id="什么是面向对象？"><a href="#什么是面向对象？" class="headerlink" title="什么是面向对象？"></a>什么是面向对象？</h2><p>面向对象是一种思想，世间万物都可以看做一个对象，这里只讨论面向对象编程（OOP），Java 是一个支持并发、基于类和面向对象的计算机编程语言，面向对象软件开发具有以下优点：代码开发模块化，更易维护和修改；代码复用性强；增强代码的可靠性和灵活性；增加代码的可读性。</p>
+<h2 id="面向对象的四大基本特性？"><a href="#面向对象的四大基本特性？" class="headerlink" title="面向对象的四大基本特性？"></a>面向对象的四大基本特性？</h2><p>抽象：提取现实世界中某事物的关键特性，为该事物构建模型的过程。对同一事物在不同的需求下，需要提取的特性可能不一样。得到的抽象模型中一般包含：属性（数据）和操作（行为）。这个抽象模型我们称之为类，对类进行实例化得到对象。</p>
+<p>封装：封装可以使类具有独立性和隔离性，保证类的高内聚。只暴露给类外部或者子类必须的属性和操作。类封装的实现依赖类的修饰符（public、protected 和 private 等）。</p>
+<p>继承：对现有类的一种复用机制。一个类如果继承现有的类，则这个类将拥有被继承类的所有非私有特性（属性和操作）。这里指的继承包含：类的继承和接口的实现。</p>
+<p>多态：多态是在继承的基础上实现的。多态的三个要素：继承、重写和父类引用指向子类对象。父类引用指向不同的子类对象时，调用相同的方法，呈现出不同的行为，就是类多态特性。多态可以分成编译时多态和运行时多态。</p>
+<p>抽象、封装、继承和多态是面向对象的基础。</p>
+<h2 id="amp-与-amp-amp-的区别？"><a href="#amp-与-amp-amp-的区别？" class="headerlink" title="&amp; 与 &amp;&amp; 的区别？"></a>&amp; 与 &amp;&amp; 的区别？</h2><p>&amp; 运算符有两种用法：(1) 按位与，(2) 逻辑与。&amp;&amp; 运算符是短路与运算。</p>
+<p>逻辑与跟短路与的差别是非常巨大的，虽然二者都要求运算符左右两端的布尔值都是 true 整个表达式的值才是 true。&amp;&amp; 之所以称为短路运算是因为，如果 &amp;&amp; 左边的表达式的值是 false，右边的表达式会被直接短路掉，不会进行运算。</p>
+<p>很多时候我们可能都需要用 &amp;&amp; 而不是 &amp;，例如在验证用户登录时判定用户名不是 null 而且不是空字符串，应当写为：</p>
+<p>username != null &amp;&amp; !username.equals(“”)</p>
+<p>二者的顺序不能交换，更不能用 &amp; 运算符，因为第一个条件如果不成立，根本不能进行字符串的 equals 比较，否则会产生 NullPointerException 异常。</p>
+<p>注意：逻辑或运算符（|）和短路或运算符（||）的差别也是如此。</p>
+<h2 id="什么是值传递和引用传递？"><a href="#什么是值传递和引用传递？" class="headerlink" title="什么是值传递和引用传递？"></a>什么是值传递和引用传递？</h2><p>值传递是对基本型变量而言的，传递的是该变量的一个副本，改变副本不影响原变量。</p>
+<p>引用传递一般是对于对象型变量而言的，传递的是该对象地址的一个副本，并不是原对象本身。一般认为，Java 内的传递都是值传递，Java 中实例对象的传递是引用传递。</p>
+<p>是否可以在 static 环境中访问非 static 变量？</p>
+<p>static 变量在 Java 中是属于类的，它在所有的实例中的值是一样的。当类被 Java 虚拟机载入的时候，会对 static 变量进行初始化。如果你的代码尝试不用实例来访问非 static 的变量，编译器会报错，因为这些变量还没有被创建出来，还没有跟任何实例关联上。</p>
+<p>Java 中的方法覆盖（Overriding）和方法重载（Overloading）是什么意思？</p>
+<p>Java 中的方法重载发生在同一个类里面两个或者是多个方法的方法名相同但是参数不同的情况。与此相对，方法覆盖是说子类重新定义了父类的方法。方法覆盖必须有相同的方法名，参数列表和返回类型。覆盖者可能不会限制它所覆盖的方法的访问。</p>
+<h2 id="Java-支持多继承么？"><a href="#Java-支持多继承么？" class="headerlink" title="Java 支持多继承么？"></a>Java 支持多继承么？</h2><p>Java 中类不支持多继承，只支持单继承（即一个类只有一个父类）。 但是 Java 中的接口支持多继承，即一个子接口可以有多个父接口。（接口的作用是用来扩展对象的功能，一个子接口继承多个父接口，说明子接口扩展了多个功能，当类实现接口时，类就扩展了相应的功能）。</p>
+<h2 id="Java-中，什么是构造方法？什么是构造方法重载？什么是复制构造方法？"><a href="#Java-中，什么是构造方法？什么是构造方法重载？什么是复制构造方法？" class="headerlink" title="Java 中，什么是构造方法？什么是构造方法重载？什么是复制构造方法？"></a>Java 中，什么是构造方法？什么是构造方法重载？什么是复制构造方法？</h2><p>当新对象被创建的时候，构造方法会被调用。每一个类都有构造方法。在程序员没有给类提供构造方法的情况下，Java 编译器会为这个类创建一个默认的构造方法。</p>
+<p>Java 中构造方法重载和方法重载很相似。可以为一个类创建多个构造方法。每一个构造方法必须有它自己唯一的参数列表。</p>
+<p>Java 不支持像 C++ 中那样的复制构造方法，这个不同点是因为如果你不自己写构造方法的情况下，Java 不会创建默认的复制构造方法。</p>
+<h2 id="接口和抽象类的区别是什么？"><a href="#接口和抽象类的区别是什么？" class="headerlink" title="接口和抽象类的区别是什么？"></a>接口和抽象类的区别是什么？</h2><p>从设计层面来说，抽象是对类的抽象，是一种模板设计，接口是行为的抽象，是一种行为的规范。</p>
+<p>Java 提供和支持创建抽象类和接口。它们的实现有共同点，不同点在于： 接口中所有的方法隐含的都是抽象的，而抽象类则可以同时包含抽象和非抽象的方法。</p>
+<p>类可以实现很多个接口，但是只能继承一个抽象类。类可以不实现抽象类和接口声明的所有方法，当然，在这种情况下，类也必须得声明成是抽象的。</p>
+<p>抽象类可以在不提供接口方法实现的情况下实现接口。 Java 接口中声明的变量默认都是 final 的。抽象类可以包含非 final 的变量。Java 接口中的成员函数默认是 public 的。抽象类的成员函数可以是 private，protected 或者是 public。</p>
+<p>接口是绝对抽象的，不可以被实例化。抽象类也不可以被实例化，但是，如果它包含 main 方法的话是可以被调用的。也可以参考 JDK8 中抽象类和接口的区别。</p>
+<h2 id="用最有效率的方法计算-2-乘以-8？"><a href="#用最有效率的方法计算-2-乘以-8？" class="headerlink" title="用最有效率的方法计算 2 乘以 8？"></a>用最有效率的方法计算 2 乘以 8？</h2><p>2 &lt;&lt; 3（左移 3 位相当于乘以 2 的 3 次方，右移 3 位相当于除以 2 的 3 次方）。</p>
+<h2 id="手写单例模式（饿汉和懒汉模式）和工厂模式？"><a href="#手写单例模式（饿汉和懒汉模式）和工厂模式？" class="headerlink" title="手写单例模式（饿汉和懒汉模式）和工厂模式？"></a>手写单例模式（饿汉和懒汉模式）和工厂模式？</h2><p>饿汉模式<br>//饿汉式单例类.在类初始化时，已经自行实例化<br>public class Singleton1 {<br>//私有的默认构造子<br>private Singleton1() {}<br>//已经自行实例化<br>private static final Singleton1 single = new Singleton1();<br>//静态工厂方法<br>public static Singleton1 getInstance() {<br>return single;<br>}<br>} 懒汉模式<br>//懒汉式单例类.在第一次调用的时候实例化<br>public class Singleton2 {<br>//私有的默认构造子<br>private Singleton2() {}<br>//注意，这里没有 final<br>private static Singleton2 single=null;<br>//静态工厂方法<br>public synchronized static Singleton2 getInstance() {<br>if (single == null) {<br>single = new Singleton2();<br>}<br>return single;<br>}<br>}<br>工厂模式，也可以参考之前的设计模式中的工厂模式，文末有链接。<br>interface IFactory{<br>public IProduct createProduct();<br>}<br>Class Factory implements IFactory{<br>public IProduct createProduct()<br>{<br>return new Product();<br>}<br>}<br>Public class client{<br>Public Static void main (String [] args){<br>IFactory factory=new Factory();<br>IProduct product=factory.createProduct();<br>product.ProductMethod();<br>}<br>}</p>
+<h2 id="String-和-StringBuilder、StringBuffer-的区别？"><a href="#String-和-StringBuilder、StringBuffer-的区别？" class="headerlink" title="String 和 StringBuilder、StringBuffer 的区别？"></a>String 和 StringBuilder、StringBuffer 的区别？</h2><p>Java 平台提供了两种类型的字符串：String 和 StringBuffer/StringBuilder，它们可以储存和操作字符串。</p>
+<p>其中 String 是只读字符串，也就意味着 String 引用的字符串内容是不能被改变的。</p>
+<p>而 StringBuffer/StringBuilder 类表示的字符串对象可以直接进行修改。StringBuilder 是 Java 5 中引入的，它和 StringBuffer 的方法完全相同，区别在于它是在单线程环境下使用的，因为它的所有方面都没有被 synchronized 修饰，因此它的效率也比 StringBuffer 要高。</p>
+<h2 id="Java-集合框架有哪些？说出一些集合框架的优点？"><a href="#Java-集合框架有哪些？说出一些集合框架的优点？" class="headerlink" title="Java 集合框架有哪些？说出一些集合框架的优点？"></a>Java 集合框架有哪些？说出一些集合框架的优点？</h2><p>每种编程语言中都有集合，最初的 Java 版本包含几种集合类：Vector、Stack、HashTable 和 Array。随着集合的广泛使用，Java1.2 提出了囊括所有集合接口、实现和算法的集合框架。在保证线程安全的情况下使用泛型和并发集合类，Java 已经经历了很久。它还包括在 Java 并发包中，阻塞接口以及它们的实现。集合框架的部分优点如下： （1）使用核心集合类降低开发成本，而非实现我们自己的集合类。 （2）随着使用经过严格测试的集合框架类，代码质量会得到提高。 （3）通过使用 JDK 附带的集合类，可以降低代码维护成本。 （4）复用性和可操作性。</p>
+<h2 id="集合框架中的泛型有什么优点？"><a href="#集合框架中的泛型有什么优点？" class="headerlink" title="集合框架中的泛型有什么优点？"></a>集合框架中的泛型有什么优点？</h2><p>Java1.5 引入了泛型，所有的集合接口和实现都大量地使用它。泛型允许我们为集合提供一个可以容纳的对象类型。因此，如果你添加其它类型的任何元素，它会在编译时报错。这避免了在运行时出现 ClassCastException，因为你将会在编译时得到报错信息。泛型也使得代码整洁，我们不需要使用显式转换和 instanceOf 操作符。它也给运行时带来好处，因为不会产生类型检查的字节码指令。</p>
+<h2 id="Java-集合框架的基础接口有哪些？"><a href="#Java-集合框架的基础接口有哪些？" class="headerlink" title="Java 集合框架的基础接口有哪些？"></a>Java 集合框架的基础接口有哪些？</h2><p>Collection 为集合层级的根接口。一个集合代表一组对象，这些对象即为它的元素。Java 平台不提供这个接口任何直接的实现。</p>
+<p>Set 是一个不能包含重复元素的集合。这个接口对数学集合抽象进行建模，被用来代表集合，就如一副牌。</p>
+<p>List 是一个有序集合，可以包含重复元素。你可以通过它的索引来访问任何元素。List 更像长度动态变换的数组。</p>
+<p>Map 是一个将 key 映射到 value 的对象。一个 Map 不能包含重复的 key，每个 key 最多只能映射一个 value。</p>
+<p>一些其它的接口有 Queue、Dequeue、SortedSet、SortedMap 和 ListIterator。</p>
+<h2 id="为何-Collection-不从-Cloneable-和-Serializable-接口继承？"><a href="#为何-Collection-不从-Cloneable-和-Serializable-接口继承？" class="headerlink" title="为何 Collection 不从 Cloneable 和 Serializable 接口继承？"></a>为何 Collection 不从 Cloneable 和 Serializable 接口继承？</h2><p>Collection 接口指定一组对象，对象即为它的元素。如何维护这些元素由 Collection 的具体实现决定。例如，一些如 List 的 Collection 实现允许重复的元素，而其它的如 Set 就不允许。很多 Collection 实现有一个公有的 clone 方法。然而，把它放到集合的所有实现中也是没有意义的。这是因为 Collection 是一个抽象表现，重要的是实现。</p>
+<p>当与具体实现打交道的时候，克隆或序列化的语义和含义才发挥作用。所以，具体实现应该决定如何对它进行克隆或序列化，或它是否可以被克隆或序列化。在所有的实现中授权克隆和序列化，最终导致更少的灵活性和更多的限制，特定的实现应该决定它是否可以被克隆和序列化。</p>
+<h2 id="为何-Map-接口不继承-Collection-接口？"><a href="#为何-Map-接口不继承-Collection-接口？" class="headerlink" title="为何 Map 接口不继承 Collection 接口？"></a>为何 Map 接口不继承 Collection 接口？</h2><p>尽管 Map 接口和它的实现也是集合框架的一部分，但 Map 不是集合，集合也不是 Map。因此，Map 继承 Collection 毫无意义，反之亦然。</p>
+<p>如果 Map 继承 Collection 接口，那么元素去哪儿？Map 包含 key-value 对，它提供抽取 key 或 value 列表集合的方法，但是它不适合“一组对象”规范。</p>
+<h2 id="什么是迭代器-Iterator-？"><a href="#什么是迭代器-Iterator-？" class="headerlink" title="什么是迭代器(Iterator)？"></a>什么是迭代器(Iterator)？</h2><p>Iterator 接口提供了很多对集合元素进行迭代的方法。每一个集合类都包含了可以返回迭代器实例的迭代方法。迭代器可以在迭代的过程中删除底层集合的元素,但是不可以直接调用集合的 remove(Object Obj) 删除，可以通过迭代器的 remove() 方法删除。</p>
+<h2 id="Iterator-和-ListIterator-的区别是什么？"><a href="#Iterator-和-ListIterator-的区别是什么？" class="headerlink" title="Iterator 和 ListIterator 的区别是什么？"></a>Iterator 和 ListIterator 的区别是什么？</h2><p>Iterator 可用来遍历 Set 和 List 集合，但是 ListIterator 只能用来遍历 List。</p>
+<p>Iterator 对集合只能是前向遍历，ListIterator 既可以前向也可以后向。</p>
+<p>ListIterator 实现了 Iterator 接口，并包含其他的功能。比如：增加元素，替换元素，获取前一个和后一个元素的索引等等。</p>
+<h2 id="Java-中的-HashMap-的工作原理是什么？"><a href="#Java-中的-HashMap-的工作原理是什么？" class="headerlink" title="Java 中的 HashMap 的工作原理是什么？"></a>Java 中的 HashMap 的工作原理是什么？</h2><p>我们知道在 Java 中最常用的两种结构是数组和模拟指针（引用），几乎所有的数据结构都可以利用这两种来组合实现，HashMap 也是如此。实际上 HashMap 是一个“链表散列”。</p>
+<p>HashMap 是基于 hashing 的原理，我们使用 put(key, value) 存储对象到 HashMap 中，使用 get(key) 从 HashMap 中获取对象。当我们给 put() 方法传递键和值时，我们先对键调用 hashCode() 方法，返回的 hashCode 用于找到 bucket 位置来储存 Entry 对象。</p>
+<h2 id="当两个对象的-hashcode-相同会发生什么？"><a href="#当两个对象的-hashcode-相同会发生什么？" class="headerlink" title="当两个对象的 hashcode 相同会发生什么？"></a>当两个对象的 hashcode 相同会发生什么？</h2><p>因为 hashcode 相同，所以它们的 bucket 位置相同，“碰撞”会发生。因为 HashMap 使用链表存储对象，这个 Entry（包含有键值对的 Map.Entry 对象）会存储在链表中。</p>
+<h2 id="如果两个键的-hashcode-相同，你如何获取值对象？"><a href="#如果两个键的-hashcode-相同，你如何获取值对象？" class="headerlink" title="如果两个键的 hashcode 相同，你如何获取值对象？"></a>如果两个键的 hashcode 相同，你如何获取值对象？</h2><p>当我们调用 get() 方法，HashMap 会使用键对象的 hashcode 找到 bucket 位置，然后会调用 keys.equals() 方法去找到链表中正确的节点，最终找到要找的值对象。</p>
+<h2 id="hashCode-和-equals-方法有何重要性？"><a href="#hashCode-和-equals-方法有何重要性？" class="headerlink" title="hashCode() 和 equals() 方法有何重要性？"></a>hashCode() 和 equals() 方法有何重要性？</h2><p>HashMap 使用 Key 对象的 hashCode() 和 equals() 方法去决定 key-value 对的索引。当我们试着从 HashMap 中获取值的时候，这些方法也会被用到。</p>
+<p>如果这些方法没有被正确地实现，在这种情况下，两个不同 Key 也许会产生相同的 hashCode() 和 equals() 输出，HashMap 将会认为它们是相同的，然后覆盖它们，而非把它们存储到不同的地方。</p>
+<p>同样的，所有不允许存储重复数据的集合类都使用 hashCode() 和 equals() 去查找重复，所以正确实现它们非常重要。equals() 和 hashCode() 的实现应该遵循以下规则：</p>
+<p>如果 o1.equals(o2)，那么 o1.hashCode() == o2.hashCode()总是为 true 的。 如果 o1.hashCode() == o2.hashCode()，并不意味着 o1.equals(o2)会为 true。</p>
+<h2 id="HashMap-和-HashTable-有什么区别？"><a href="#HashMap-和-HashTable-有什么区别？" class="headerlink" title="HashMap 和 HashTable 有什么区别？"></a>HashMap 和 HashTable 有什么区别？</h2><p>HashMap 是非线程安全的，HashTable 是线程安全的。<br>HashMap 的键和值都允许有 null 值存在，而 HashTable 则不行。<br>因为线程安全的问题，HashMap 效率比 HashTable 的要高。<br>HashTable 是同步的，而 HashMap 不是。因此，HashMap 更适合于单线程环境，而 HashTable 适合于多线程环境。<br>一般现在不建议用 HashTable，一是 HashTable 是遗留类，内部实现很多没优化和冗余。二是即使在多线程环境下，现在也有同步的 ConcurrentHashMap 替代，没有必要因为是多线程而用 HashTable。</p>
+<h2 id="如何决定选用-HashMap-还是-TreeMap？"><a href="#如何决定选用-HashMap-还是-TreeMap？" class="headerlink" title="如何决定选用 HashMap 还是 TreeMap？"></a>如何决定选用 HashMap 还是 TreeMap？</h2><p>对于在 Map 中插入、删除和定位元素这类操作，HashMap 是最好的选择。然而，假如你需要对一个有序的 key 集合进行遍历， TreeMap 是更好的选择。基于你的 collection 的大小，也许向 HashMap 中添加元素会更快，将 map 换为 TreeMap 进行有序 key 的遍历。</p>
+<h2 id="ArrayList-和-Vector-有何异同点？"><a href="#ArrayList-和-Vector-有何异同点？" class="headerlink" title="ArrayList 和 Vector 有何异同点？"></a>ArrayList 和 Vector 有何异同点？</h2><p>ArrayList 和 Vector 在很多时候都很类似。<br>（1）两者都是基于索引的，内部由一个数组支持。<br>（2）两者维护插入的顺序，我们可以根据插入顺序来获取元素。<br>（3）ArrayList 和 Vector 的迭代器实现都是 fail-fast 的。<br>（4）ArrayList 和 Vector 两者允许 null 值，也可以使用索引值对元素进行随机访问。<br>以下是 ArrayList 和 Vector 的不同点。<br>（1）Vector 是同步的，而 ArrayList 不是。然而，如果你寻求在迭代的时候对列表进行改变，你应该使用 CopyOnWriteArrayList。<br>（2）ArrayList 比 Vector 快，它因为有同步，不会过载。<br>（3）ArrayList 更加通用，因为我们可以使用 Collections 工具类轻易地获取同步列表和只读列表。</p>
+<h2 id="Array-和-ArrayList-有何区别？什么时候更适合用-Array？"><a href="#Array-和-ArrayList-有何区别？什么时候更适合用-Array？" class="headerlink" title="Array 和 ArrayList 有何区别？什么时候更适合用 Array？"></a>Array 和 ArrayList 有何区别？什么时候更适合用 Array？</h2><p>Array 可以容纳基本类型和对象，而 ArrayList 只能容纳对象。 Array 是指定大小的，而 ArrayList 大小是固定的。Array 没有提供 ArrayList 那么多功能，比如 addAll、removeAll 和 iterator 等。尽管 ArrayList 明显是更好的选择，但也有些时候 Array 比较好用，比如下面的三种情况。<br>（1）如果列表的大小已经指定，大部分情况下是存储和遍历它们。<br>（2）对于遍历基本数据类型，尽管 Collections 使用自动装箱来减轻编码任务，在指定大小的基本类型的列表上工作也会变得很慢。<br>（3）如果你要使用多维数组，使用 [][] 比 List。</p>
+<h2 id="快速失败（fail-fast）和安全失败（fail-safe）的区别是什么？"><a href="#快速失败（fail-fast）和安全失败（fail-safe）的区别是什么？" class="headerlink" title="快速失败（fail-fast）和安全失败（fail-safe）的区别是什么？"></a>快速失败（fail-fast）和安全失败（fail-safe）的区别是什么？</h2><p>快速失败：当你在迭代一个集合的时候，如果有另一个线程正在修改你正在访问的那个集合时，就会抛出一个 ConcurrentModification 异常。 在 java.util 包下的都是快速失败。</p>
+<p>安全失败：你在迭代的时候会去底层集合做一个拷贝，所以你在修改上层集合的时候是不会受影响的，不会抛出 ConcurrentModification 异常。在 java.util.concurrent 包下的全是安全失败的。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/interview/" rel="tag"># interview</a>
+              <a href="/tags/java/" rel="tag"># java</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/10/10/interview-docker/" rel="prev" title="interview/docker">
+      <i class="fa fa-chevron-left"></i> interview/docker
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/10/10/interview-linux/" rel="next" title="interview/linux">
+      interview/linux <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#java-%E5%9F%BA%E7%A1%80"><span class="nav-number">1.</span> <span class="nav-text">java 基础</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java-%E7%96%91%E9%9A%BE%E7%82%B9"><span class="nav-number">2.</span> <span class="nav-text">Java 疑难点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF-Java-%E8%99%9A%E6%8B%9F%E6%9C%BA%EF%BC%88JVM%EF%BC%89%EF%BC%9F%E4%B8%BA%E4%BB%80%E4%B9%88-Java-%E8%A2%AB%E7%A7%B0%E4%BD%9C%E6%98%AF%E2%80%9C%E5%B9%B3%E5%8F%B0%E6%97%A0%E5%85%B3%E7%9A%84%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80%E2%80%9D%EF%BC%9F"><span class="nav-number">3.</span> <span class="nav-text">什么是 Java 虚拟机（JVM）？为什么 Java 被称作是“平台无关的编程语言”？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JDK%E3%80%81JRE%E3%80%81JVM-%E5%88%86%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88%E5%85%B3%E7%B3%BB%EF%BC%9F"><span class="nav-number">4.</span> <span class="nav-text">JDK、JRE、JVM 分别是什么关系？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java-%E6%94%AF%E6%8C%81%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F"><span class="nav-number">5.</span> <span class="nav-text">Java 支持的数据类型有哪些？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%87%AA%E5%8A%A8%E6%8B%86%E8%A3%85%E7%AE%B1%EF%BC%9F"><span class="nav-number">6.</span> <span class="nav-text">什么是自动拆装箱？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%EF%BC%9F"><span class="nav-number">7.</span> <span class="nav-text">什么是面向对象？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%9A%84%E5%9B%9B%E5%A4%A7%E5%9F%BA%E6%9C%AC%E7%89%B9%E6%80%A7%EF%BC%9F"><span class="nav-number">8.</span> <span class="nav-text">面向对象的四大基本特性？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#amp-%E4%B8%8E-amp-amp-%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="nav-number">9.</span> <span class="nav-text">&amp; 与 &amp;&amp; 的区别？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%80%BC%E4%BC%A0%E9%80%92%E5%92%8C%E5%BC%95%E7%94%A8%E4%BC%A0%E9%80%92%EF%BC%9F"><span class="nav-number">10.</span> <span class="nav-text">什么是值传递和引用传递？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java-%E6%94%AF%E6%8C%81%E5%A4%9A%E7%BB%A7%E6%89%BF%E4%B9%88%EF%BC%9F"><span class="nav-number">11.</span> <span class="nav-text">Java 支持多继承么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java-%E4%B8%AD%EF%BC%8C%E4%BB%80%E4%B9%88%E6%98%AF%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95%EF%BC%9F%E4%BB%80%E4%B9%88%E6%98%AF%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95%E9%87%8D%E8%BD%BD%EF%BC%9F%E4%BB%80%E4%B9%88%E6%98%AF%E5%A4%8D%E5%88%B6%E6%9E%84%E9%80%A0%E6%96%B9%E6%B3%95%EF%BC%9F"><span class="nav-number">12.</span> <span class="nav-text">Java 中，什么是构造方法？什么是构造方法重载？什么是复制构造方法？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%8E%A5%E5%8F%A3%E5%92%8C%E6%8A%BD%E8%B1%A1%E7%B1%BB%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-number">13.</span> <span class="nav-text">接口和抽象类的区别是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8%E6%9C%80%E6%9C%89%E6%95%88%E7%8E%87%E7%9A%84%E6%96%B9%E6%B3%95%E8%AE%A1%E7%AE%97-2-%E4%B9%98%E4%BB%A5-8%EF%BC%9F"><span class="nav-number">14.</span> <span class="nav-text">用最有效率的方法计算 2 乘以 8？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%89%8B%E5%86%99%E5%8D%95%E4%BE%8B%E6%A8%A1%E5%BC%8F%EF%BC%88%E9%A5%BF%E6%B1%89%E5%92%8C%E6%87%92%E6%B1%89%E6%A8%A1%E5%BC%8F%EF%BC%89%E5%92%8C%E5%B7%A5%E5%8E%82%E6%A8%A1%E5%BC%8F%EF%BC%9F"><span class="nav-number">15.</span> <span class="nav-text">手写单例模式（饿汉和懒汉模式）和工厂模式？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#String-%E5%92%8C-StringBuilder%E3%80%81StringBuffer-%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="nav-number">16.</span> <span class="nav-text">String 和 StringBuilder、StringBuffer 的区别？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java-%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F%E8%AF%B4%E5%87%BA%E4%B8%80%E4%BA%9B%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E7%9A%84%E4%BC%98%E7%82%B9%EF%BC%9F"><span class="nav-number">17.</span> <span class="nav-text">Java 集合框架有哪些？说出一些集合框架的优点？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E4%B8%AD%E7%9A%84%E6%B3%9B%E5%9E%8B%E6%9C%89%E4%BB%80%E4%B9%88%E4%BC%98%E7%82%B9%EF%BC%9F"><span class="nav-number">18.</span> <span class="nav-text">集合框架中的泛型有什么优点？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java-%E9%9B%86%E5%90%88%E6%A1%86%E6%9E%B6%E7%9A%84%E5%9F%BA%E7%A1%80%E6%8E%A5%E5%8F%A3%E6%9C%89%E5%93%AA%E4%BA%9B%EF%BC%9F"><span class="nav-number">19.</span> <span class="nav-text">Java 集合框架的基础接口有哪些？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E4%BD%95-Collection-%E4%B8%8D%E4%BB%8E-Cloneable-%E5%92%8C-Serializable-%E6%8E%A5%E5%8F%A3%E7%BB%A7%E6%89%BF%EF%BC%9F"><span class="nav-number">20.</span> <span class="nav-text">为何 Collection 不从 Cloneable 和 Serializable 接口继承？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E4%BD%95-Map-%E6%8E%A5%E5%8F%A3%E4%B8%8D%E7%BB%A7%E6%89%BF-Collection-%E6%8E%A5%E5%8F%A3%EF%BC%9F"><span class="nav-number">21.</span> <span class="nav-text">为何 Map 接口不继承 Collection 接口？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E8%BF%AD%E4%BB%A3%E5%99%A8-Iterator-%EF%BC%9F"><span class="nav-number">22.</span> <span class="nav-text">什么是迭代器(Iterator)？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Iterator-%E5%92%8C-ListIterator-%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-number">23.</span> <span class="nav-text">Iterator 和 ListIterator 的区别是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Java-%E4%B8%AD%E7%9A%84-HashMap-%E7%9A%84%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-number">24.</span> <span class="nav-text">Java 中的 HashMap 的工作原理是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BD%93%E4%B8%A4%E4%B8%AA%E5%AF%B9%E8%B1%A1%E7%9A%84-hashcode-%E7%9B%B8%E5%90%8C%E4%BC%9A%E5%8F%91%E7%94%9F%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-number">25.</span> <span class="nav-text">当两个对象的 hashcode 相同会发生什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A6%82%E6%9E%9C%E4%B8%A4%E4%B8%AA%E9%94%AE%E7%9A%84-hashcode-%E7%9B%B8%E5%90%8C%EF%BC%8C%E4%BD%A0%E5%A6%82%E4%BD%95%E8%8E%B7%E5%8F%96%E5%80%BC%E5%AF%B9%E8%B1%A1%EF%BC%9F"><span class="nav-number">26.</span> <span class="nav-text">如果两个键的 hashcode 相同，你如何获取值对象？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hashCode-%E5%92%8C-equals-%E6%96%B9%E6%B3%95%E6%9C%89%E4%BD%95%E9%87%8D%E8%A6%81%E6%80%A7%EF%BC%9F"><span class="nav-number">27.</span> <span class="nav-text">hashCode() 和 equals() 方法有何重要性？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#HashMap-%E5%92%8C-HashTable-%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="nav-number">28.</span> <span class="nav-text">HashMap 和 HashTable 有什么区别？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E5%86%B3%E5%AE%9A%E9%80%89%E7%94%A8-HashMap-%E8%BF%98%E6%98%AF-TreeMap%EF%BC%9F"><span class="nav-number">29.</span> <span class="nav-text">如何决定选用 HashMap 还是 TreeMap？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ArrayList-%E5%92%8C-Vector-%E6%9C%89%E4%BD%95%E5%BC%82%E5%90%8C%E7%82%B9%EF%BC%9F"><span class="nav-number">30.</span> <span class="nav-text">ArrayList 和 Vector 有何异同点？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Array-%E5%92%8C-ArrayList-%E6%9C%89%E4%BD%95%E5%8C%BA%E5%88%AB%EF%BC%9F%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E6%9B%B4%E9%80%82%E5%90%88%E7%94%A8-Array%EF%BC%9F"><span class="nav-number">31.</span> <span class="nav-text">Array 和 ArrayList 有何区别？什么时候更适合用 Array？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BF%AB%E9%80%9F%E5%A4%B1%E8%B4%A5%EF%BC%88fail-fast%EF%BC%89%E5%92%8C%E5%AE%89%E5%85%A8%E5%A4%B1%E8%B4%A5%EF%BC%88fail-safe%EF%BC%89%E7%9A%84%E5%8C%BA%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-number">32.</span> <span class="nav-text">快速失败（fail-fast）和安全失败（fail-safe）的区别是什么？</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Hulk Yang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Hulk Yang</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

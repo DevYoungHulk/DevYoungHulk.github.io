@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="git 面试基础">
+<meta property="og:type" content="article">
+<meta property="og:title" content="interview&#x2F;git">
+<meta property="og:url" content="http://example.com/2020/10/10/interview-git/index.html">
+<meta property="og:site_name" content="新消息">
+<meta property="og:description" content="git 面试基础">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-10-10T08:05:39.000Z">
+<meta property="article:modified_time" content="2020-10-10T08:28:57.981Z">
+<meta property="article:author" content="Hulk Yang">
+<meta property="article:tag" content="interview">
+<meta property="article:tag" content="git">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/2020/10/10/interview-git/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>interview/git | 新消息</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">新消息</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/10/10/interview-git/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Hulk Yang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="新消息">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          interview/git
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-10-10 16:05:39 / 修改时间：16:28:57" itemprop="dateCreated datePublished" datetime="2020-10-10T16:05:39+08:00">2020-10-10</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/git/" itemprop="url" rel="index"><span itemprop="name">git</span></a>
+                </span>
+            </span>
+
+          
+            <div class="post-description">git 面试基础</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="Q1-Git-和-SVN-有什么区别？"><a href="#Q1-Git-和-SVN-有什么区别？" class="headerlink" title="Q1. Git 和 SVN 有什么区别？"></a>Q1. Git 和 SVN 有什么区别？</h2><table>
+<thead>
+<tr>
+<th>Git</th>
+<th>SVN</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1. Git 是一个分布式的版本控制工具</td>
+<td>1. SVN 是集中版本控制工具</td>
+</tr>
+<tr>
+<td>2.它属于第 3 代版本控制工具</td>
+<td>2.它属于第 2 代版本控制工具</td>
+</tr>
+<tr>
+<td>3.客户端可以在其本地系统上克隆整个存储库</td>
+<td>3.版本历史记录存储在服务器端存储库中</td>
+</tr>
+<tr>
+<td>4.即使离线也可以提交</td>
+<td>4.只允许在线提交</td>
+</tr>
+<tr>
+<td>5.Push/pull 操作更快</td>
+<td>5.Push/pull 操作较慢</td>
+</tr>
+<tr>
+<td>6.工程可以用 commit 自动共享</td>
+<td>6.没有任何东西自动共享</td>
+</tr>
+</tbody></table>
+<h2 id="Q2-什么是-Git？"><a href="#Q2-什么是-Git？" class="headerlink" title="Q2. 什么是 Git？"></a>Q2. 什么是 Git？</h2><p>我建议你先通过了解 git 的架构再来回答这个问题，如下图所示，试着解释一下这个图：<br>Git 是分布式版本控制系统（DVCS）。它可以跟踪文件的更改，并允许你恢复到任何特定版本的更改。<br>与 SVN 等其他版本控制系统（VCS）相比，其分布式架构具有许多优势，一个主要优点是它不依赖于中央服务器来存储项目文件的所有版本。<br>每个开发人员都可以“克隆”我在图中用“Local repository”标注的存储库的副本，并且在他的硬盘驱动器上具有项目的完整历史记录，因此当服务器中断时，你需要的所有恢复数据都在你队友的本地 Git 存储库中。<br>还有一个中央云存储库，开发人员可以向其提交更改，并与其他团队成员进行共享，如图所示，所有协作者都在提交更改“远程存储库”。</p>
+<p>下一组 Git 面试问题将测试你使用 Git 的体验：</p>
+<h2 id="Q3-在-Git-中提交的命令是什么？"><a href="#Q3-在-Git-中提交的命令是什么？" class="headerlink" title="Q3. 在 Git 中提交的命令是什么？"></a>Q3. 在 Git 中提交的命令是什么？</h2><p>答案非常简单。<br>用于写入提交的命令是 git commit -a。<br>现在解释一下 -a 标志， 通过在命令行上加 -a 指示 git 提交已修改的所有被跟踪文件的新内容。还要提一下，如果你是第一次需要提交新文件，可以在在 git commit -a 之前先 git add <file>。</p>
+<h2 id="Q4-什么是-Git-中的“裸存储库”？"><a href="#Q4-什么是-Git-中的“裸存储库”？" class="headerlink" title="Q4. 什么是 Git 中的“裸存储库”？"></a>Q4. 什么是 Git 中的“裸存储库”？</h2><p>你应该说明 “工作目录” 和 “裸存储库” 之间的区别。<br>Git 中的 “裸” 存储库只包含版本控制信息而没有工作文件（没有工作树），并且它不包含特殊的 .git 子目录。相反，它直接在主目录本身包含 .git 子目录中的所有内容，其中工作目录包括：<br>一个 .git 子目录，其中包含你的仓库所有相关的 Git 修订历史记录。<br>工作树，或签出的项目文件的副本。</p>
+<h2 id="Q5-Git-是用什么语言编写的？"><a href="#Q5-Git-是用什么语言编写的？" class="headerlink" title="Q5. Git 是用什么语言编写的？"></a>Q5. Git 是用什么语言编写的？</h2><p>你需要说明使用它的原因，而不仅仅是说出语言的名称。我建议你这样回答：<br>Git 使用 C 语言编写。 GIT 很快，C 语言通过减少运行时的开销来做到这一点。</p>
+<h2 id="Q6-在-Git-中，你如何还原已经-push-并公开的提交？"><a href="#Q6-在-Git-中，你如何还原已经-push-并公开的提交？" class="headerlink" title="Q6. 在 Git 中，你如何还原已经 push 并公开的提交？"></a>Q6. 在 Git 中，你如何还原已经 push 并公开的提交？</h2><p>There can be two answers to this question and make sure that you include both because any of the below options can be used depending on the situation: 1<br>这个问题可以有两个答案，你回答时也要保包含这两个答案，因为根据具体情况可以使用以下选项：<br>删除或修复新提交中的错误文件，并将其推送到远程存储库。这是修复错误的最自然方式。对文件进行必要的修改后，将其提交到我将使用的远程存储库<br>git commit -m “commit message”<br>创建一个新的提交，撤消在错误提交中所做的所有更改。可以使用命令：<br>git revert <name of bad commit></p>
+<h2 id="Q7-git-pull-和-git-fetch-有什么区别？"><a href="#Q7-git-pull-和-git-fetch-有什么区别？" class="headerlink" title="Q7. git pull 和 git fetch 有什么区别？"></a>Q7. git pull 和 git fetch 有什么区别？</h2><p>git pull 命令从中央存储库中提取特定分支的新更改或提交，并更新本地存储库中的目标分支。<br>git fetch 也用于相同的目的，但它的工作方式略有不同。当你执行 git fetch 时，它会从所需的分支中提取所有新提交，并将其存储在本地存储库中的新分支中。如果要在目标分支中反映这些更改，必须在 git fetch 之后执行 git merge。只有在对目标分支和获取的分支进行合并后才会更新目标分支。为了方便起见，请记住以下等式：<br>git pull = git fetch + git merge</p>
+<h2 id="Q8-git-中的“staging-area”或“index”是什么？-延伸问题-git-本地分区分别是什么"><a href="#Q8-git-中的“staging-area”或“index”是什么？-延伸问题-git-本地分区分别是什么" class="headerlink" title="Q8. git 中的“staging area”或“index”是什么？(延伸问题 git 本地分区分别是什么)"></a>Q8. git 中的“staging area”或“index”是什么？(延伸问题 git 本地分区分别是什么)</h2><p>工作区（Working Directory）:<br>是直接编辑的地方，肉眼可见，直接操作。<br>暂存区（Stage 或 Index）:<br>数据暂时存放的区域。<br>版本库（commit History）:<br>存放已经提交的数据，push 的时候，就是把这个区的数据 push 到远程 git 仓库了。<br>|创建版本库|版本控制|远程协作|查看信息|<br>|-|-|-|-|<br>|git init||git add|git pull|git help|<br>|git clone| git commit| git push|git log|<br>|_| git rm| _| git diff|</p>
+<h2 id="Q9-什么是-git-stash"><a href="#Q9-什么是-git-stash" class="headerlink" title="Q9. 什么是 git stash?"></a>Q9. 什么是 git stash?</h2><p>首先应该解释 git stash 的必要性。<br>通常情况下，当你一直在处理项目的某一部分时，如果你想要在某个时候切换分支去处理其他事情，事情会处于混乱的状态。问题是，你不想把完成了一半的工作的提交，以便你以后就可以回到当前的工作。解决这个问题的答案是 git stash。<br>再解释什么是 git stash。<br>stash 会将你的工作目录，即修改后的跟踪文件和暂存的更改保存在一堆未完成的更改中，你可以随时重新应用这些更改。</p>
+<h2 id="Q10-什么是-git-stash-drop？"><a href="#Q10-什么是-git-stash-drop？" class="headerlink" title="Q10. 什么是 git stash drop？"></a>Q10. 什么是 git stash drop？</h2><p>通过说明我们使用 git stash drop 的目的来回答这个问题。<br>git stash drop 命令用于删除隐藏的项目。默认情况下，它将删除最后添加的存储项，如果提供参数的话，它还可以删除特定项。<br>下面举个例子。<br>如果要从隐藏项目列表中删除特定的存储项目，可以使用以下命令：<br>git stash list：它将显示隐藏项目列表，如：<br>stash@{0}: WIP on master: 049d078 added the index file<br>stash@{1}: WIP on master: c264051 Revert “added file_size”<br>stash@{2}: WIP on master: 21d80a5 added number to log<br>如果要删除名为 stash@{0} 的项目，请使用命令 git stash drop stash@{0}。</p>
+<h2 id="Q11-如何找到特定提交中已更改的文件列表？"><a href="#Q11-如何找到特定提交中已更改的文件列表？" class="headerlink" title="Q11. 如何找到特定提交中已更改的文件列表？"></a>Q11. 如何找到特定提交中已更改的文件列表？</h2><p>对于这个问题，不能仅仅是提供命令，还要解释这个命令究竟做了些什么。<br>要获取特定提交中已更改的列表文件，请使用以下命令：<br>git diff-tree -r {hash}<br>给定提交哈希，这将列出在该提交中更改或添加的所有文件。 -r 标志使命令列出单个文件，而不是仅将它们折叠到根目录名称中。<br>你还可以包括下面提到的内容，虽然它是可选的，但有助于给面试官留下深刻印象。<br>输出还将包含一些额外信息，可以通过包含两个标志把它们轻松的屏蔽掉：<br>git diff-tree –no-commit-id –name-only -r {hash}<br>这里 -no-commit-id 将禁止提交哈希值出现在输出中，而 -name-only 只会打印文件名而不是它们的路径。</p>
+<h2 id="Q12-git-config-的功能是什么？（延伸问题-–global-是干什么用的）"><a href="#Q12-git-config-的功能是什么？（延伸问题-–global-是干什么用的）" class="headerlink" title="Q12. git config 的功能是什么？（延伸问题 –global 是干什么用的）"></a>Q12. git config 的功能是什么？（延伸问题 –global 是干什么用的）</h2><p>首先说明为什么我们需要 git config。<br>git 使用你的用户名将提交与身份相关联。 git config 命令可用来更改你的 git 配置，包括你的用户名。<br>下面用一个例子来解释。<br>假设你要提供用户名和电子邮件 ID 用来将提交与身份相关联，以便你可以知道是谁进行了特定提交。为此，我将使用：<br>git config –global user.name “Your Name”: 此命令将添加用户名。<br>git config –global user.email “Your E-mail Address”: 此命令将添加电子邮件 ID。</p>
+<h2 id="Q13-提交对象包含什么？"><a href="#Q13-提交对象包含什么？" class="headerlink" title="Q13. 提交对象包含什么？"></a>Q13. 提交对象包含什么？</h2><p>Commit 对象包含以下组件，你应该提到以下这三点：<br>一组文件，表示给定时间点的项目状态<br>引用父提交对象<br>SHAI 名称，一个 40 个字符的字符串，提交对象的唯一标识。</p>
+<h2 id="Q14-如何在-Git-中创建存储库？"><a href="#Q14-如何在-Git-中创建存储库？" class="headerlink" title="Q14. 如何在 Git 中创建存储库？"></a>Q14. 如何在 Git 中创建存储库？</h2><p>这可能是最常见的问题，答案很简单。<br>要创建存储库，先为项目创建一个目录（如果该目录不存在），然后运行命令 git init。通过运行此命令，将在项目的目录中创建 .git 目录。</p>
+<h2 id="Q15-怎样将-N-次提交压缩成一次提交？"><a href="#Q15-怎样将-N-次提交压缩成一次提交？" class="headerlink" title="Q15. 怎样将 N 次提交压缩成一次提交？"></a>Q15. 怎样将 N 次提交压缩成一次提交？</h2><p>将 N 个提交压缩到单个提交中有两种方式：<br>如果要从头开始编写新的提交消息，请使用以下命令：<br>git reset –soft HEAD<del>N &amp;&amp;<br>git commit<br>如果你想在新的提交消息中串联现有的提交消息，那么需要提取这些消息并将它们传给 git commit，可以这样：<br>git reset –soft HEAD</del>N &amp;&amp;<br>git commit –edit -m”$(git log –format=%B –reverse .HEAD@{N})”</p>
+<h2 id="Q16-什么是-Git-bisect？如何使用它来确定（回归）错误的来源？"><a href="#Q16-什么是-Git-bisect？如何使用它来确定（回归）错误的来源？" class="headerlink" title="Q16. 什么是 Git bisect？如何使用它来确定（回归）错误的来源？"></a>Q16. 什么是 Git bisect？如何使用它来确定（回归）错误的来源？</h2><p>我建议你先给出一个 Git bisect 的小定义。<br>Git bisect 用于查找使用二进制搜索引入错误的提交。 Git bisect 的命令是<br>git bisect <subcommand> <options><br>既然你已经提到过上面的命令，那就解释一下这个命令会做什么。<br>此命令用了二进制搜索算法来查找项目历史记录中的哪个提交引入了错误。你可以通过告诉它已知包含该错误的“错误”提交以及在引入错误之前已知的“良好”提交来使用它。然后 git bisect 在这两个端点之间选择一个提交，并询问你所选的提交是“好”还是“坏”。它继续缩小范围，直到找到引入更改的确切提交。</p>
+<h2 id="Q18-描述一下你所使用的分支策略？-结合公司的分支策略说，下面只是例子"><a href="#Q18-描述一下你所使用的分支策略？-结合公司的分支策略说，下面只是例子" class="headerlink" title="Q18. 描述一下你所使用的分支策略？(结合公司的分支策略说，下面只是例子)"></a>Q18. 描述一下你所使用的分支策略？(结合公司的分支策略说，下面只是例子)</h2><p>这个问题被要求用 Git 来测试你的分支经验，告诉他们你在以前的工作中如何使用分支以及它的用途是什么，你可以参考以下提到的要点：<br>功能分支（Feature branching）<br>要素分支模型将特定要素的所有更改保留在分支内。当通过自动化测试对功能进行全面测试和验证时，该分支将合并到主服务器中。<br>任务分支（Task branching）<br>在此模型中，每个任务都在其自己的分支上实现，任务键包含在分支名称中。很容易看出哪个代码实现了哪个任务，只需在分支名称中查找任务键。<br>发布分支（Release branching）<br>一旦开发分支获得了足够的发布功能，你就可以克隆该分支来形成发布分支。创建该分支将会启动下一个发布周期，所以在此之后不能再添加任何新功能，只有错误修复，文档生成和其他面向发布的任务应该包含在此分支中。一旦准备好发布，该版本将合并到主服务器并标记版本号。此外，它还应该再将自发布以来已经取得的进展合并回开发分支。<br>最后告诉他们分支策略因团队而异，所以我知道基本的分支操作，如删除、合并、检查分支等。</p>
+<h2 id="Q19-如果分支是否已合并为-master，你可以通过什么手段知道？"><a href="#Q19-如果分支是否已合并为-master，你可以通过什么手段知道？" class="headerlink" title="Q19. 如果分支是否已合并为 master，你可以通过什么手段知道？"></a>Q19. 如果分支是否已合并为 master，你可以通过什么手段知道？</h2><p>答案很直接。<br>要知道某个分支是否已合并为 master，你可以使用以下命令：<br>git branch –merged 它列出了已合并到当前分支的分支。<br>git branch –no-merged 它列出了尚未合并的分支。</p>
+<h2 id="Q20-如何初始化仓库（包括提交到远程）"><a href="#Q20-如何初始化仓库（包括提交到远程）" class="headerlink" title="Q20.如何初始化仓库（包括提交到远程）"></a>Q20.如何初始化仓库（包括提交到远程）</h2><p>git init<br>git add remote（remote url）<br>git push</p>
+<h2 id="Q21-在-Git-中提交的命令是什么？"><a href="#Q21-在-Git-中提交的命令是什么？" class="headerlink" title="Q21.在 Git 中提交的命令是什么？"></a>Q21.在 Git 中提交的命令是什么？</h2><p>git commit 本地提交<br>git push 推送到远程</p>
+<h2 id="如何修改本地-commit-message"><a href="#如何修改本地-commit-message" class="headerlink" title="如何修改本地 commit message"></a>如何修改本地 commit message</h2><p>git commit –amend</p>
+<h2 id="Q22-如何撤销未-push-的提交"><a href="#Q22-如何撤销未-push-的提交" class="headerlink" title="Q22.如何撤销未 push 的提交"></a>Q22.如何撤销未 push 的提交</h2><p>git reset &lt;版本号&gt;</p>
+<h2 id="Q23-如何撤销已经-push-的提交"><a href="#Q23-如何撤销已经-push-的提交" class="headerlink" title="Q23.如何撤销已经 push 的提交"></a>Q23.如何撤销已经 push 的提交</h2><p>git reset –hard &lt;版本号&gt;<br>git push origin &lt;分支名&gt; –force</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/interview/" rel="tag"># interview</a>
+              <a href="/tags/git/" rel="tag"># git</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2018/05/28/cnpm/" rel="prev" title="NPM 淘宝镜像（CNPM）">
+      <i class="fa fa-chevron-left"></i> NPM 淘宝镜像（CNPM）
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/10/10/interview-http/" rel="next" title="interview/http">
+      interview/http <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Q1-Git-%E5%92%8C-SVN-%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="nav-number">1.</span> <span class="nav-text">Q1. Git 和 SVN 有什么区别？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q2-%E4%BB%80%E4%B9%88%E6%98%AF-Git%EF%BC%9F"><span class="nav-number">2.</span> <span class="nav-text">Q2. 什么是 Git？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q3-%E5%9C%A8-Git-%E4%B8%AD%E6%8F%90%E4%BA%A4%E7%9A%84%E5%91%BD%E4%BB%A4%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-number">3.</span> <span class="nav-text">Q3. 在 Git 中提交的命令是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q4-%E4%BB%80%E4%B9%88%E6%98%AF-Git-%E4%B8%AD%E7%9A%84%E2%80%9C%E8%A3%B8%E5%AD%98%E5%82%A8%E5%BA%93%E2%80%9D%EF%BC%9F"><span class="nav-number">4.</span> <span class="nav-text">Q4. 什么是 Git 中的“裸存储库”？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q5-Git-%E6%98%AF%E7%94%A8%E4%BB%80%E4%B9%88%E8%AF%AD%E8%A8%80%E7%BC%96%E5%86%99%E7%9A%84%EF%BC%9F"><span class="nav-number">5.</span> <span class="nav-text">Q5. Git 是用什么语言编写的？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q6-%E5%9C%A8-Git-%E4%B8%AD%EF%BC%8C%E4%BD%A0%E5%A6%82%E4%BD%95%E8%BF%98%E5%8E%9F%E5%B7%B2%E7%BB%8F-push-%E5%B9%B6%E5%85%AC%E5%BC%80%E7%9A%84%E6%8F%90%E4%BA%A4%EF%BC%9F"><span class="nav-number">6.</span> <span class="nav-text">Q6. 在 Git 中，你如何还原已经 push 并公开的提交？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q7-git-pull-%E5%92%8C-git-fetch-%E6%9C%89%E4%BB%80%E4%B9%88%E5%8C%BA%E5%88%AB%EF%BC%9F"><span class="nav-number">7.</span> <span class="nav-text">Q7. git pull 和 git fetch 有什么区别？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q8-git-%E4%B8%AD%E7%9A%84%E2%80%9Cstaging-area%E2%80%9D%E6%88%96%E2%80%9Cindex%E2%80%9D%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F-%E5%BB%B6%E4%BC%B8%E9%97%AE%E9%A2%98-git-%E6%9C%AC%E5%9C%B0%E5%88%86%E5%8C%BA%E5%88%86%E5%88%AB%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-number">8.</span> <span class="nav-text">Q8. git 中的“staging area”或“index”是什么？(延伸问题 git 本地分区分别是什么)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q9-%E4%BB%80%E4%B9%88%E6%98%AF-git-stash"><span class="nav-number">9.</span> <span class="nav-text">Q9. 什么是 git stash?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q10-%E4%BB%80%E4%B9%88%E6%98%AF-git-stash-drop%EF%BC%9F"><span class="nav-number">10.</span> <span class="nav-text">Q10. 什么是 git stash drop？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q11-%E5%A6%82%E4%BD%95%E6%89%BE%E5%88%B0%E7%89%B9%E5%AE%9A%E6%8F%90%E4%BA%A4%E4%B8%AD%E5%B7%B2%E6%9B%B4%E6%94%B9%E7%9A%84%E6%96%87%E4%BB%B6%E5%88%97%E8%A1%A8%EF%BC%9F"><span class="nav-number">11.</span> <span class="nav-text">Q11. 如何找到特定提交中已更改的文件列表？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q12-git-config-%E7%9A%84%E5%8A%9F%E8%83%BD%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F%EF%BC%88%E5%BB%B6%E4%BC%B8%E9%97%AE%E9%A2%98-%E2%80%93global-%E6%98%AF%E5%B9%B2%E4%BB%80%E4%B9%88%E7%94%A8%E7%9A%84%EF%BC%89"><span class="nav-number">12.</span> <span class="nav-text">Q12. git config 的功能是什么？（延伸问题 –global 是干什么用的）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q13-%E6%8F%90%E4%BA%A4%E5%AF%B9%E8%B1%A1%E5%8C%85%E5%90%AB%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-number">13.</span> <span class="nav-text">Q13. 提交对象包含什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q14-%E5%A6%82%E4%BD%95%E5%9C%A8-Git-%E4%B8%AD%E5%88%9B%E5%BB%BA%E5%AD%98%E5%82%A8%E5%BA%93%EF%BC%9F"><span class="nav-number">14.</span> <span class="nav-text">Q14. 如何在 Git 中创建存储库？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q15-%E6%80%8E%E6%A0%B7%E5%B0%86-N-%E6%AC%A1%E6%8F%90%E4%BA%A4%E5%8E%8B%E7%BC%A9%E6%88%90%E4%B8%80%E6%AC%A1%E6%8F%90%E4%BA%A4%EF%BC%9F"><span class="nav-number">15.</span> <span class="nav-text">Q15. 怎样将 N 次提交压缩成一次提交？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q16-%E4%BB%80%E4%B9%88%E6%98%AF-Git-bisect%EF%BC%9F%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E5%AE%83%E6%9D%A5%E7%A1%AE%E5%AE%9A%EF%BC%88%E5%9B%9E%E5%BD%92%EF%BC%89%E9%94%99%E8%AF%AF%E7%9A%84%E6%9D%A5%E6%BA%90%EF%BC%9F"><span class="nav-number">16.</span> <span class="nav-text">Q16. 什么是 Git bisect？如何使用它来确定（回归）错误的来源？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q18-%E6%8F%8F%E8%BF%B0%E4%B8%80%E4%B8%8B%E4%BD%A0%E6%89%80%E4%BD%BF%E7%94%A8%E7%9A%84%E5%88%86%E6%94%AF%E7%AD%96%E7%95%A5%EF%BC%9F-%E7%BB%93%E5%90%88%E5%85%AC%E5%8F%B8%E7%9A%84%E5%88%86%E6%94%AF%E7%AD%96%E7%95%A5%E8%AF%B4%EF%BC%8C%E4%B8%8B%E9%9D%A2%E5%8F%AA%E6%98%AF%E4%BE%8B%E5%AD%90"><span class="nav-number">17.</span> <span class="nav-text">Q18. 描述一下你所使用的分支策略？(结合公司的分支策略说，下面只是例子)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q19-%E5%A6%82%E6%9E%9C%E5%88%86%E6%94%AF%E6%98%AF%E5%90%A6%E5%B7%B2%E5%90%88%E5%B9%B6%E4%B8%BA-master%EF%BC%8C%E4%BD%A0%E5%8F%AF%E4%BB%A5%E9%80%9A%E8%BF%87%E4%BB%80%E4%B9%88%E6%89%8B%E6%AE%B5%E7%9F%A5%E9%81%93%EF%BC%9F"><span class="nav-number">18.</span> <span class="nav-text">Q19. 如果分支是否已合并为 master，你可以通过什么手段知道？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q20-%E5%A6%82%E4%BD%95%E5%88%9D%E5%A7%8B%E5%8C%96%E4%BB%93%E5%BA%93%EF%BC%88%E5%8C%85%E6%8B%AC%E6%8F%90%E4%BA%A4%E5%88%B0%E8%BF%9C%E7%A8%8B%EF%BC%89"><span class="nav-number">19.</span> <span class="nav-text">Q20.如何初始化仓库（包括提交到远程）</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q21-%E5%9C%A8-Git-%E4%B8%AD%E6%8F%90%E4%BA%A4%E7%9A%84%E5%91%BD%E4%BB%A4%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-number">20.</span> <span class="nav-text">Q21.在 Git 中提交的命令是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E4%BF%AE%E6%94%B9%E6%9C%AC%E5%9C%B0-commit-message"><span class="nav-number">21.</span> <span class="nav-text">如何修改本地 commit message</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q22-%E5%A6%82%E4%BD%95%E6%92%A4%E9%94%80%E6%9C%AA-push-%E7%9A%84%E6%8F%90%E4%BA%A4"><span class="nav-number">22.</span> <span class="nav-text">Q22.如何撤销未 push 的提交</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Q23-%E5%A6%82%E4%BD%95%E6%92%A4%E9%94%80%E5%B7%B2%E7%BB%8F-push-%E7%9A%84%E6%8F%90%E4%BA%A4"><span class="nav-number">23.</span> <span class="nav-text">Q23.如何撤销已经 push 的提交</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Hulk Yang</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Hulk Yang</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

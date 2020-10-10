@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Android-studio plugins</title>
+    <url>/2018/05/09/android-studio-plugin/</url>
+    <content><![CDATA[<p>工欲善其事必先利其器</p>
+<a id="more"></a>
+<h2 id="必备"><a href="#必备" class="headerlink" title="必备"></a>必备</h2><p>ADB idea<br>Adds the following ADB commands to Android Studio and Intellij.<br>方便快捷执行 ADB 常用命令</p>
+<p>Gradle Killer<br>This plugin kills Gradle tasks using the system task manager with just one click. No more struggling with “ps” or playing Russian roulette with “java.exe” processes! Just click the icon in the “Run” section and you’re done!<br>在Gradle执行期间强制终止Gradle运行</p>
+<h2 id="Java相关"><a href="#Java相关" class="headerlink" title="Java相关"></a>Java相关</h2><p>Alibaba Java Coding Guidelines<br>Alibaba Java Coding Guidelines plugin support.<br>Github：<a href="https://github.com/alibaba/p3c">https://github.com/alibaba/p3c</a><br>Java手册：PDF</p>
+<p>Android Parcelable code generator<br>Plugin which generates Android Parcelable boilerplate code for you.</p>
+<p>GsonFormat<br>quickly to convert a JSON string to an InnerClassEntity class.</p>
+<h2 id="Kotlin相关"><a href="#Kotlin相关" class="headerlink" title="Kotlin相关"></a>Kotlin相关</h2><p>Parcelable Code Generator(for kotlin)<br>Parcelable Code Generator is a plugin which generates Android Parcelable boilerplate code for kotlin class.</p>
+<p>Json to Kotlin Class(JsonToKotlinClass)<br>Plugin for Kotlin to convert Json String into Kotlin data class code quickly</p>
+]]></content>
+      <categories>
+        <category>android</category>
+      </categories>
+      <tags>
+        <tag>android</tag>
+        <tag>tools</tag>
+        <tag>buildtime</tag>
+        <tag>android-studio</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Android 开发必备工具合集</title>
+    <url>/2018/05/09/android-tools/</url>
+    <content><![CDATA[<p>工欲善其事必先利其器</p>
+<a id="more"></a>
+
+<h2 id="Homebrew"><a href="#Homebrew" class="headerlink" title="Homebrew"></a>Homebrew</h2><p>MAC 包管理工具<br>官网：<a href="https://brew.sh/">https://brew.sh/</a></p>
+<h2 id="Homebrew-Cask"><a href="#Homebrew-Cask" class="headerlink" title="Homebrew-Cask"></a>Homebrew-Cask</h2><p>MAC APP 管理工具<br>官网：<a href="http://caskroom.github.io/">http://caskroom.github.io/</a></p>
+<h2 id="iTerm2"><a href="#iTerm2" class="headerlink" title="iTerm2"></a>iTerm2</h2><p>替代系统 Terminal，集成 tmux 以原生方式分屏，支持自定义快捷键等…<br>官网：<a href="https://www.iterm2.com/">https://www.iterm2.com/</a></p>
+<h2 id="Oh-My-ZSH"><a href="#Oh-My-ZSH" class="headerlink" title="Oh My ZSH"></a>Oh My ZSH</h2><p>配合 iTerm2 个性化显示效果，非常炫酷，同时支持更多 zsh 插件，如autojump、git、extract、sublime、z等。<br>官网：<a href="http://ohmyz.sh/">http://ohmyz.sh/</a><br>官方插件一览：<a href="https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins-Overview">https://github.com/robbyrussell/oh-my-zsh/wiki/Plugins-Overview</a></p>
+<h2 id="Snap"><a href="#Snap" class="headerlink" title="Snap"></a>Snap</h2><p>为 App 添加全局快捷键，快速打开或切换 App<br>App Store：<a href="https://itunes.apple.com/cn/app/snap/id418073146?l=en&amp;mt=12">https://itunes.apple.com/cn/app/snap/id418073146?l=en&amp;mt=12</a></p>
+<h2 id="Color-Note"><a href="#Color-Note" class="headerlink" title="Color Note"></a>Color Note</h2><p>屏幕取色软件<br>App Store：<a href="https://itunes.apple.com/cn/app/color-note/id1099028591?l=en&amp;mt=12">https://itunes.apple.com/cn/app/color-note/id1099028591?l=en&amp;mt=12</a></p>
+<h2 id="Cornerstone"><a href="#Cornerstone" class="headerlink" title="Cornerstone"></a>Cornerstone</h2><p>比较好用的 SVN 管理软件。<br>收费软件 ~ 自行 Google</p>
+<h2 id="ImageOptim"><a href="#ImageOptim" class="headerlink" title="ImageOptim"></a>ImageOptim</h2><p>一款图片无损压缩软件，简单实用。<br>官网：<a href="https://imageoptim.com/mac">https://imageoptim.com/mac</a></p>
+<h2 id="PostMan"><a href="#PostMan" class="headerlink" title="PostMan"></a>PostMan</h2><p>接口调试必备。<br>官网：<a href="https://www.getpostman.com/">https://www.getpostman.com/</a></p>
+]]></content>
+      <categories>
+        <category>android</category>
+      </categories>
+      <tags>
+        <tag>android</tag>
+        <tag>tools</tag>
+        <tag>buildtime</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NPM 淘宝镜像（CNPM）</title>
+    <url>/2018/05/28/cnpm/</url>
+    <content><![CDATA[<p>NPM 淘宝镜像（CNPM）</p>
+<a id="more"></a>
+
+<p>$ npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a></p>
+<p>或者你直接通过添加 npm 参数 alias 一个新命令:<br>alias cnpm=”npm –registry=<a href="https://registry.npm.taobao.org/">https://registry.npm.taobao.org</a> <br>–cache=$HOME/.npm/.cache/cnpm <br>–disturl=<a href="https://npm.taobao.org/dist">https://npm.taobao.org/dist</a> <br>–userconfig=$HOME/.cnpmrc”</p>
+<p>Nodemon<br>开发调试工具<br>npm install -g nodemon<br>使用时候只需要执行命令 nodemon 运行 server , 每次改动都会触发 node 服务重启</p>
+]]></content>
+      <categories>
+        <category>javascript</category>
+      </categories>
+      <tags>
+        <tag>npm</tag>
+        <tag>taobao</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>interview/docker</title>
+    <url>/2020/10/10/interview-docker/</url>
+    <content><![CDATA[<h1 id="Docker"><a href="#Docker" class="headerlink" title="Docker"></a>Docker</h1><p><a href="https://github.com/Snailclimb/JavaGuide/blob/master/docs/tools/Docker-Image.md">https://github.com/Snailclimb/JavaGuide/blob/master/docs/tools/Docker-Image.md</a></p>
+]]></content>
+      <categories>
+        <category>docker</category>
+      </categories>
+      <tags>
+        <tag>interview</tag>
+        <tag>docker</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>interview/git</title>
+    <url>/2020/10/10/interview-git/</url>
+    <content><![CDATA[<h2 id="Q1-Git-和-SVN-有什么区别？"><a href="#Q1-Git-和-SVN-有什么区别？" class="headerlink" title="Q1. Git 和 SVN 有什么区别？"></a>Q1. Git 和 SVN 有什么区别？</h2><table>
+<thead>
+<tr>
+<th>Git</th>
+<th>SVN</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1. Git 是一个分布式的版本控制工具</td>
+<td>1. SVN 是集中版本控制工具</td>
+</tr>
+<tr>
+<td>2.它属于第 3 代版本控制工具</td>
+<td>2.它属于第 2 代版本控制工具</td>
+</tr>
+<tr>
+<td>3.客户端可以在其本地系统上克隆整个存储库</td>
+<td>3.版本历史记录存储在服务器端存储库中</td>
+</tr>
+<tr>
+<td>4.即使离线也可以提交</td>
+<td>4.只允许在线提交</td>
+</tr>
+<tr>
+<td>5.Push/pull 操作更快</td>
+<td>5.Push/pull 操作较慢</td>
+</tr>
+<tr>
+<td>6.工程可以用 commit 自动共享</td>
+<td>6.没有任何东西自动共享</td>
+</tr>
+</tbody></table>
+<h2 id="Q2-什么是-Git？"><a href="#Q2-什么是-Git？" class="headerlink" title="Q2. 什么是 Git？"></a>Q2. 什么是 Git？</h2><p>我建议你先通过了解 git 的架构再来回答这个问题，如下图所示，试着解释一下这个图：<br>Git 是分布式版本控制系统（DVCS）。它可以跟踪文件的更改，并允许你恢复到任何特定版本的更改。<br>与 SVN 等其他版本控制系统（VCS）相比，其分布式架构具有许多优势，一个主要优点是它不依赖于中央服务器来存储项目文件的所有版本。<br>每个开发人员都可以“克隆”我在图中用“Local repository”标注的存储库的副本，并且在他的硬盘驱动器上具有项目的完整历史记录，因此当服务器中断时，你需要的所有恢复数据都在你队友的本地 Git 存储库中。<br>还有一个中央云存储库，开发人员可以向其提交更改，并与其他团队成员进行共享，如图所示，所有协作者都在提交更改“远程存储库”。</p>
+<p>下一组 Git 面试问题将测试你使用 Git 的体验：</p>
+<h2 id="Q3-在-Git-中提交的命令是什么？"><a href="#Q3-在-Git-中提交的命令是什么？" class="headerlink" title="Q3. 在 Git 中提交的命令是什么？"></a>Q3. 在 Git 中提交的命令是什么？</h2><p>答案非常简单。<br>用于写入提交的命令是 git commit -a。<br>现在解释一下 -a 标志， 通过在命令行上加 -a 指示 git 提交已修改的所有被跟踪文件的新内容。还要提一下，如果你是第一次需要提交新文件，可以在在 git commit -a 之前先 git add <file>。</p>
+<h2 id="Q4-什么是-Git-中的“裸存储库”？"><a href="#Q4-什么是-Git-中的“裸存储库”？" class="headerlink" title="Q4. 什么是 Git 中的“裸存储库”？"></a>Q4. 什么是 Git 中的“裸存储库”？</h2><p>你应该说明 “工作目录” 和 “裸存储库” 之间的区别。<br>Git 中的 “裸” 存储库只包含版本控制信息而没有工作文件（没有工作树），并且它不包含特殊的 .git 子目录。相反，它直接在主目录本身包含 .git 子目录中的所有内容，其中工作目录包括：<br>一个 .git 子目录，其中包含你的仓库所有相关的 Git 修订历史记录。<br>工作树，或签出的项目文件的副本。</p>
+<h2 id="Q5-Git-是用什么语言编写的？"><a href="#Q5-Git-是用什么语言编写的？" class="headerlink" title="Q5. Git 是用什么语言编写的？"></a>Q5. Git 是用什么语言编写的？</h2><p>你需要说明使用它的原因，而不仅仅是说出语言的名称。我建议你这样回答：<br>Git 使用 C 语言编写。 GIT 很快，C 语言通过减少运行时的开销来做到这一点。</p>
+<h2 id="Q6-在-Git-中，你如何还原已经-push-并公开的提交？"><a href="#Q6-在-Git-中，你如何还原已经-push-并公开的提交？" class="headerlink" title="Q6. 在 Git 中，你如何还原已经 push 并公开的提交？"></a>Q6. 在 Git 中，你如何还原已经 push 并公开的提交？</h2><p>There can be two answers to this question and make sure that you include both because any of the below options can be used depending on the situation: 1<br>这个问题可以有两个答案，你回答时也要保包含这两个答案，因为根据具体情况可以使用以下选项：<br>删除或修复新提交中的错误文件，并将其推送到远程存储库。这是修复错误的最自然方式。对文件进行必要的修改后，将其提交到我将使用的远程存储库<br>git commit -m “commit message”<br>创建一个新的提交，撤消在错误提交中所做的所有更改。可以使用命令：<br>git revert <name of bad commit></p>
+<h2 id="Q7-git-pull-和-git-fetch-有什么区别？"><a href="#Q7-git-pull-和-git-fetch-有什么区别？" class="headerlink" title="Q7. git pull 和 git fetch 有什么区别？"></a>Q7. git pull 和 git fetch 有什么区别？</h2><p>git pull 命令从中央存储库中提取特定分支的新更改或提交，并更新本地存储库中的目标分支。<br>git fetch 也用于相同的目的，但它的工作方式略有不同。当你执行 git fetch 时，它会从所需的分支中提取所有新提交，并将其存储在本地存储库中的新分支中。如果要在目标分支中反映这些更改，必须在 git fetch 之后执行 git merge。只有在对目标分支和获取的分支进行合并后才会更新目标分支。为了方便起见，请记住以下等式：<br>git pull = git fetch + git merge</p>
+<h2 id="Q8-git-中的“staging-area”或“index”是什么？-延伸问题-git-本地分区分别是什么"><a href="#Q8-git-中的“staging-area”或“index”是什么？-延伸问题-git-本地分区分别是什么" class="headerlink" title="Q8. git 中的“staging area”或“index”是什么？(延伸问题 git 本地分区分别是什么)"></a>Q8. git 中的“staging area”或“index”是什么？(延伸问题 git 本地分区分别是什么)</h2><p>工作区（Working Directory）:<br>是直接编辑的地方，肉眼可见，直接操作。<br>暂存区（Stage 或 Index）:<br>数据暂时存放的区域。<br>版本库（commit History）:<br>存放已经提交的数据，push 的时候，就是把这个区的数据 push 到远程 git 仓库了。<br>|创建版本库|版本控制|远程协作|查看信息|<br>|-|-|-|-|<br>|git init||git add|git pull|git help|<br>|git clone| git commit| git push|git log|<br>|_| git rm| _| git diff|</p>
+<h2 id="Q9-什么是-git-stash"><a href="#Q9-什么是-git-stash" class="headerlink" title="Q9. 什么是 git stash?"></a>Q9. 什么是 git stash?</h2><p>首先应该解释 git stash 的必要性。<br>通常情况下，当你一直在处理项目的某一部分时，如果你想要在某个时候切换分支去处理其他事情，事情会处于混乱的状态。问题是，你不想把完成了一半的工作的提交，以便你以后就可以回到当前的工作。解决这个问题的答案是 git stash。<br>再解释什么是 git stash。<br>stash 会将你的工作目录，即修改后的跟踪文件和暂存的更改保存在一堆未完成的更改中，你可以随时重新应用这些更改。</p>
+<h2 id="Q10-什么是-git-stash-drop？"><a href="#Q10-什么是-git-stash-drop？" class="headerlink" title="Q10. 什么是 git stash drop？"></a>Q10. 什么是 git stash drop？</h2><p>通过说明我们使用 git stash drop 的目的来回答这个问题。<br>git stash drop 命令用于删除隐藏的项目。默认情况下，它将删除最后添加的存储项，如果提供参数的话，它还可以删除特定项。<br>下面举个例子。<br>如果要从隐藏项目列表中删除特定的存储项目，可以使用以下命令：<br>git stash list：它将显示隐藏项目列表，如：<br>stash@{0}: WIP on master: 049d078 added the index file<br>stash@{1}: WIP on master: c264051 Revert “added file_size”<br>stash@{2}: WIP on master: 21d80a5 added number to log<br>如果要删除名为 stash@{0} 的项目，请使用命令 git stash drop stash@{0}。</p>
+<h2 id="Q11-如何找到特定提交中已更改的文件列表？"><a href="#Q11-如何找到特定提交中已更改的文件列表？" class="headerlink" title="Q11. 如何找到特定提交中已更改的文件列表？"></a>Q11. 如何找到特定提交中已更改的文件列表？</h2><p>对于这个问题，不能仅仅是提供命令，还要解释这个命令究竟做了些什么。<br>要获取特定提交中已更改的列表文件，请使用以下命令：<br>git diff-tree -r {hash}<br>给定提交哈希，这将列出在该提交中更改或添加的所有文件。 -r 标志使命令列出单个文件，而不是仅将它们折叠到根目录名称中。<br>你还可以包括下面提到的内容，虽然它是可选的，但有助于给面试官留下深刻印象。<br>输出还将包含一些额外信息，可以通过包含两个标志把它们轻松的屏蔽掉：<br>git diff-tree –no-commit-id –name-only -r {hash}<br>这里 -no-commit-id 将禁止提交哈希值出现在输出中，而 -name-only 只会打印文件名而不是它们的路径。</p>
+<h2 id="Q12-git-config-的功能是什么？（延伸问题-–global-是干什么用的）"><a href="#Q12-git-config-的功能是什么？（延伸问题-–global-是干什么用的）" class="headerlink" title="Q12. git config 的功能是什么？（延伸问题 –global 是干什么用的）"></a>Q12. git config 的功能是什么？（延伸问题 –global 是干什么用的）</h2><p>首先说明为什么我们需要 git config。<br>git 使用你的用户名将提交与身份相关联。 git config 命令可用来更改你的 git 配置，包括你的用户名。<br>下面用一个例子来解释。<br>假设你要提供用户名和电子邮件 ID 用来将提交与身份相关联，以便你可以知道是谁进行了特定提交。为此，我将使用：<br>git config –global user.name “Your Name”: 此命令将添加用户名。<br>git config –global user.email “Your E-mail Address”: 此命令将添加电子邮件 ID。</p>
+<h2 id="Q13-提交对象包含什么？"><a href="#Q13-提交对象包含什么？" class="headerlink" title="Q13. 提交对象包含什么？"></a>Q13. 提交对象包含什么？</h2><p>Commit 对象包含以下组件，你应该提到以下这三点：<br>一组文件，表示给定时间点的项目状态<br>引用父提交对象<br>SHAI 名称，一个 40 个字符的字符串，提交对象的唯一标识。</p>
+<h2 id="Q14-如何在-Git-中创建存储库？"><a href="#Q14-如何在-Git-中创建存储库？" class="headerlink" title="Q14. 如何在 Git 中创建存储库？"></a>Q14. 如何在 Git 中创建存储库？</h2><p>这可能是最常见的问题，答案很简单。<br>要创建存储库，先为项目创建一个目录（如果该目录不存在），然后运行命令 git init。通过运行此命令，将在项目的目录中创建 .git 目录。</p>
+<h2 id="Q15-怎样将-N-次提交压缩成一次提交？"><a href="#Q15-怎样将-N-次提交压缩成一次提交？" class="headerlink" title="Q15. 怎样将 N 次提交压缩成一次提交？"></a>Q15. 怎样将 N 次提交压缩成一次提交？</h2><p>将 N 个提交压缩到单个提交中有两种方式：<br>如果要从头开始编写新的提交消息，请使用以下命令：<br>git reset –soft HEAD<del>N &amp;&amp;<br>git commit<br>如果你想在新的提交消息中串联现有的提交消息，那么需要提取这些消息并将它们传给 git commit，可以这样：<br>git reset –soft HEAD</del>N &amp;&amp;<br>git commit –edit -m”$(git log –format=%B –reverse .HEAD@{N})”</p>
+<h2 id="Q16-什么是-Git-bisect？如何使用它来确定（回归）错误的来源？"><a href="#Q16-什么是-Git-bisect？如何使用它来确定（回归）错误的来源？" class="headerlink" title="Q16. 什么是 Git bisect？如何使用它来确定（回归）错误的来源？"></a>Q16. 什么是 Git bisect？如何使用它来确定（回归）错误的来源？</h2><p>我建议你先给出一个 Git bisect 的小定义。<br>Git bisect 用于查找使用二进制搜索引入错误的提交。 Git bisect 的命令是<br>git bisect <subcommand> <options><br>既然你已经提到过上面的命令，那就解释一下这个命令会做什么。<br>此命令用了二进制搜索算法来查找项目历史记录中的哪个提交引入了错误。你可以通过告诉它已知包含该错误的“错误”提交以及在引入错误之前已知的“良好”提交来使用它。然后 git bisect 在这两个端点之间选择一个提交，并询问你所选的提交是“好”还是“坏”。它继续缩小范围，直到找到引入更改的确切提交。</p>
+<h2 id="Q18-描述一下你所使用的分支策略？-结合公司的分支策略说，下面只是例子"><a href="#Q18-描述一下你所使用的分支策略？-结合公司的分支策略说，下面只是例子" class="headerlink" title="Q18. 描述一下你所使用的分支策略？(结合公司的分支策略说，下面只是例子)"></a>Q18. 描述一下你所使用的分支策略？(结合公司的分支策略说，下面只是例子)</h2><p>这个问题被要求用 Git 来测试你的分支经验，告诉他们你在以前的工作中如何使用分支以及它的用途是什么，你可以参考以下提到的要点：<br>功能分支（Feature branching）<br>要素分支模型将特定要素的所有更改保留在分支内。当通过自动化测试对功能进行全面测试和验证时，该分支将合并到主服务器中。<br>任务分支（Task branching）<br>在此模型中，每个任务都在其自己的分支上实现，任务键包含在分支名称中。很容易看出哪个代码实现了哪个任务，只需在分支名称中查找任务键。<br>发布分支（Release branching）<br>一旦开发分支获得了足够的发布功能，你就可以克隆该分支来形成发布分支。创建该分支将会启动下一个发布周期，所以在此之后不能再添加任何新功能，只有错误修复，文档生成和其他面向发布的任务应该包含在此分支中。一旦准备好发布，该版本将合并到主服务器并标记版本号。此外，它还应该再将自发布以来已经取得的进展合并回开发分支。<br>最后告诉他们分支策略因团队而异，所以我知道基本的分支操作，如删除、合并、检查分支等。</p>
+<h2 id="Q19-如果分支是否已合并为-master，你可以通过什么手段知道？"><a href="#Q19-如果分支是否已合并为-master，你可以通过什么手段知道？" class="headerlink" title="Q19. 如果分支是否已合并为 master，你可以通过什么手段知道？"></a>Q19. 如果分支是否已合并为 master，你可以通过什么手段知道？</h2><p>答案很直接。<br>要知道某个分支是否已合并为 master，你可以使用以下命令：<br>git branch –merged 它列出了已合并到当前分支的分支。<br>git branch –no-merged 它列出了尚未合并的分支。</p>
+<h2 id="Q20-如何初始化仓库（包括提交到远程）"><a href="#Q20-如何初始化仓库（包括提交到远程）" class="headerlink" title="Q20.如何初始化仓库（包括提交到远程）"></a>Q20.如何初始化仓库（包括提交到远程）</h2><p>git init<br>git add remote（remote url）<br>git push</p>
+<h2 id="Q21-在-Git-中提交的命令是什么？"><a href="#Q21-在-Git-中提交的命令是什么？" class="headerlink" title="Q21.在 Git 中提交的命令是什么？"></a>Q21.在 Git 中提交的命令是什么？</h2><p>git commit 本地提交<br>git push 推送到远程</p>
+<h2 id="如何修改本地-commit-message"><a href="#如何修改本地-commit-message" class="headerlink" title="如何修改本地 commit message"></a>如何修改本地 commit message</h2><p>git commit –amend</p>
+<h2 id="Q22-如何撤销未-push-的提交"><a href="#Q22-如何撤销未-push-的提交" class="headerlink" title="Q22.如何撤销未 push 的提交"></a>Q22.如何撤销未 push 的提交</h2><p>git reset &lt;版本号&gt;</p>
+<h2 id="Q23-如何撤销已经-push-的提交"><a href="#Q23-如何撤销已经-push-的提交" class="headerlink" title="Q23.如何撤销已经 push 的提交"></a>Q23.如何撤销已经 push 的提交</h2><p>git reset –hard &lt;版本号&gt;<br>git push origin &lt;分支名&gt; –force</p>
+]]></content>
+      <categories>
+        <category>git</category>
+      </categories>
+      <tags>
+        <tag>interview</tag>
+        <tag>git</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>interview/http</title>
+    <url>/2020/10/10/interview-http/</url>
+    <content><![CDATA[<h2 id="http-协议中各个响应状态返回值的含义"><a href="#http-协议中各个响应状态返回值的含义" class="headerlink" title="http 协议中各个响应状态返回值的含义"></a>http 协议中各个响应状态返回值的含义</h2><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status">https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status</a></p>
+<h2 id="HTTP-八种方法"><a href="#HTTP-八种方法" class="headerlink" title="HTTP 八种方法"></a>HTTP 八种方法</h2><p>OPTIONS<br>GET<br>HEAD<br>POST<br>PUT<br>DELETE<br>TRACE<br>CONNECT</p>
+<h2 id="POST-GET-区别"><a href="#POST-GET-区别" class="headerlink" title="POST GET 区别"></a>POST GET 区别</h2><p>get 把请求的数据放在 url 上，即 HTTP 协议头上，其格式为：以?分割 URL 和传输数据，参数之间以&amp;相连。数据如果是英文字母/数字，原样发送，如果是空格，转换为+，如果是中文/其他字符，则直接把字符串用 BASE64 加密，及“%”加上“字符串的 16 进制 ASCII 码”。post 把数据放在 HTTP 的包体内（requrest body）。<br>get 提交的数据最大是 2k（原则上 url 长度无限制，那么 get 提交的数据也没有限制咯？限制实际上取决于浏览器，(大多数)浏览器通常都会限制 url 长度在 2K 个字节，即使(大多数)服务器最多处理 64K 大小的 url。也没有卵用。）。post 理论上没有限制。实际上 IIS4 中最大量为 80KB，IIS5 中为 100KB。<br>GET 产生一个 TCP 数据包，浏览器会把 http header 和 data 一并发送出去，服务器响应 200(返回数据);POST 产生两个 TCP 数据包，浏览器先发送 header，服务器响应 100 continue，浏览器再发送 data，服务器响应 200 ok(返回数据)。<br>GET 在浏览器回退时是无害的，POST 会再次提交请求。<br>GET 产生的 URL 地址可以被 Bookmark，而 POST 不可以。<br>GET 请求会被浏览器主动 cache，而 POST 不会，除非手动设置。<br>GET 请求只能进行 url 编码，而 POST 支持多种编码方式。<br>GET 请求参数会被完整保留在浏览器历史记录里，而 POST 中的参数不会被保留。<br>GET 只接受 ASCII 字符的参数的数据类型，而 POST 没有限制<br>那么，post 那么好为什么还用 get？get 效率高！。  </p>
+<h2 id="REST-接口规范-RESTful-的-6-大原则"><a href="#REST-接口规范-RESTful-的-6-大原则" class="headerlink" title="REST 接口规范, RESTful 的 6 大原则"></a>REST 接口规范, RESTful 的 6 大原则</h2><p><a href="https://zhuanlan.zhihu.com/p/90367875">https://zhuanlan.zhihu.com/p/90367875</a></p>
+<h2 id="3-次握手，4-次挥手"><a href="#3-次握手，4-次挥手" class="headerlink" title="3 次握手，4 次挥手"></a>3 次握手，4 次挥手</h2><p>第一次握手(SYN=1, seq=x):</p>
+<p>客户端发送一个 TCP 的 SYN 标志位置 1 的包，指明客户端打算连接的服务器的端口，以及初始序号 X,保存在包头的序列号(Sequence Number)字段里。</p>
+<p>发送完毕后，客户端进入 SYN_SEND 状态。</p>
+<p>第二次握手(SYN=1, ACK=1, seq=y, ACKnum=x+1):</p>
+<p>服务器发回确认包(ACK)应答。即 SYN 标志位和 ACK 标志位均为 1。服务器端选择自己 ISN 序列号，放到 Seq 域里，同时将确认序号(Acknowledgement Number)设置为客户的 ISN 加 1，即 X+1。 发送完毕后，服务器端进入 SYN_RCVD 状态。</p>
+<p>第三次握手(ACK=1，ACKnum=y+1)</p>
+<p>客户端再次发送确认包(ACK)，SYN 标志位为 0，ACK 标志位为 1，并且把服务器发来 ACK 的序号字段+1，放在确定字段中发送给对方，并且在数据段放写 ISN 的+1</p>
+<p>发送完毕后，客户端进入 ESTABLISHED 状态，当服务器端接收到这个包时，也进入 ESTABLISHED 状态，TCP 握手结束。<br>TCP 的连接的拆除需要发送四个包，因此称为四次挥手(Four-way handshake)，也叫做改进的三次握手。客户端或服务器均可主动发起挥手动作，在 socket 编程中，任何一方执行 close() 操作即可产生挥手操作。</p>
+<p>第一次挥手(FIN=1，seq=x)</p>
+<p>假设客户端想要关闭连接，客户端发送一个 FIN 标志位置为 1 的包，表示自己已经没有数据可以发送了，但是仍然可以接受数据。</p>
+<p>发送完毕后，客户端进入 FIN_WAIT_1 状态。</p>
+<p>第二次挥手(ACK=1，ACKnum=x+1)</p>
+<p>服务器端确认客户端的 FIN 包，发送一个确认包，表明自己接受到了客户端关闭连接的请求，但还没有准备好关闭连接。</p>
+<p>发送完毕后，服务器端进入 CLOSE_WAIT 状态，客户端接收到这个确认包之后，进入 FIN_WAIT_2 状态，等待服务器端关闭连接。</p>
+<p>第三次挥手(FIN=1，seq=y)</p>
+<p>服务器端准备好关闭连接时，向客户端发送结束连接请求，FIN 置为 1。</p>
+<p>发送完毕后，服务器端进入 LAST_ACK 状态，等待来自客户端的最后一个 ACK。</p>
+<p>第四次挥手(ACK=1，ACKnum=y+1)</p>
+<p>客户端接收到来自服务器端的关闭请求，发送一个确认包，并进入 TIME_WAIT 状态，等待可能出现的要求重传的 ACK 包。</p>
+<p>服务器端接收到这个确认包之后，关闭连接，进入 CLOSED 状态。</p>
+<p>客户端等待了某个固定时间（两个最大段生命周期，2MSL，2 Maximum Segment Lifetime）之后，没有收到服务器端的 ACK ，认为服务器端已经正常关闭连接，于是自己也关闭连接，进入 CLOSED 状态。<br><a href="https://hit-alibaba.github.io/interview/basic/network/TCP.html">https://hit-alibaba.github.io/interview/basic/network/TCP.html</a></p>
+<p><a href="https://blog.csdn.net/qzcsu/article/details/72861891">https://blog.csdn.net/qzcsu/article/details/72861891</a></p>
+<h2 id="TCP-和-UDP-区别"><a href="#TCP-和-UDP-区别" class="headerlink" title="TCP 和 UDP 区别"></a>TCP 和 UDP 区别</h2><p>TCP (Transmission Control Protocol)和 UDP(User Datagram Protocol)协议属于传输层协议，它们之间的区别包括：<br>TCP 是面向连接的，UDP 是无连接的；<br>TCP 是可靠的，UDP 是不可靠的；<br>TCP 只支持点对点通信，UDP 支持一对一、一对多、多对一、多对多的通信模式；<br>TCP 是面向字节流的，UDP 是面向报文的；<br>TCP 有拥塞控制机制;UDP 没有拥塞控制，适合媒体通信；<br>TCP 首部开销(20 个字节)比 UDP 的首部开销(8 个字节)要大；  </p>
+<h2 id="http-和-https-区别"><a href="#http-和-https-区别" class="headerlink" title="http 和 https 区别"></a>http 和 https 区别</h2><p>Http 协议运行在 TCP 之上，明文传输，客户端与服务器端都无法验证对方的身份；Https 是身披 SSL(Secure Socket Layer)外壳的 Http，运行于 SSL 上，SSL 运行于 TCP 之上，是添加了加密和认证机制的 HTTP。二者之间存在如下不同：<br>端口不同：Http 与 Http 使用不同的连接方式，用的端口也不一样，前者是 80，后者是 443；<br>资源消耗：和 HTTP 通信相比，Https 通信会由于加减密处理消耗更多的 CPU 和内存资源；<br>开销：Https 通信需要证书，而证书一般需要向认证机构购买；　 Https 的加密机制是一种共享密钥加密和公开密钥加密并用的混合加密机制。  </p>
+<h2 id="对称加密与非对称加密"><a href="#对称加密与非对称加密" class="headerlink" title="对称加密与非对称加密"></a>对称加密与非对称加密</h2><p>对称密钥加密是指加密和解密使用同一个密钥的方式，这种方式存在的最大问题就是密钥发送问题，即如何安全地将密钥发给对方；而非对称加密是指使用一对非对称密钥，即公钥和私钥，公钥可以随意发布，但私钥只有自己知道。发送密文的一方使用对方的公钥进行加密处理，对方接收到加密信息后，使用自己的私钥进行解密。<br>　　由于非对称加密的方式不需要发送用来解密的私钥，所以可以保证安全性；但是和对称加密比起来，它非常的慢，所以我们还是要用对称加密来传送消息，但对称加密所使用的密钥我们可以通过非对称加密的方式发送出去。</p>
+<h2 id="http1-0-和-http2-0-区别"><a href="#http1-0-和-http2-0-区别" class="headerlink" title="http1.0 和 http2.0 区别"></a>http1.0 和 http2.0 区别</h2><p>新的二进制格式（Binary Format），HTTP1.x 的解析是基于文本。基于文本协议的格式解析存在天然缺陷，文本的表现形式有多样性，要做到健壮性考虑的场景必然很多，二进制则不同，只认 0 和 1 的组合。基于这种考虑 HTTP2.0 的协议解析决定采用二进制格式，实现方便且健壮。<br>多路复用（MultiPlexing），即连接共享，即每一个 request 都是是用作连接共享机制的。一个 request 对应一个 id，这样一个连接上可以有多个 request，每个连接的 request 可以随机的混杂在一起，接收方可以根据 request 的 id 将 request 再归属到各自不同的服务端请求里面。<br>header 压缩，如上文中所言，对前面提到过 HTTP1.x 的 header 带有大量信息，而且每次都要重复发送，HTTP2.0 使用 encoder 来减少需要传输的 header 大小，通讯双方各自 cache 一份 header fields 表，既避免了重复 header 的传输，又减小了需要传输的大小。<br>服务端推送（server push），同 SPDY 一样，HTTP2.0 也具有 server push 功能。</p>
+<h2 id="Session、Cookie-与-Application"><a href="#Session、Cookie-与-Application" class="headerlink" title="Session、Cookie 与 Application"></a>Session、Cookie 与 Application</h2><p>Cookie：<br>Cookie 和 Session 都是客户端与服务器之间保持状态的解决方案，具体来说，cookie 机制采用的是在客户端保持状态的方案，而 session 机制采用的是在服务器端保持状态的方案。<br>Session：<br>同样地，会话状态也可以保存在服务器端。客户端请求服务器，如果服务器记录该用户状态，就获取 Session 来保存状态，这时，如果服务器已经为此客户端创建过 session，服务器就按照 sessionid 把这个 session 检索出来使用；如果客户端请求不包含 sessionid，则为此客户端创建一个 session 并且生成一个与此 session 相关联的 sessionid，并将这个 sessionid 在本次响应中返回给客户端保存。保存这个 sessionid 的方式可以采用  cookie 机制  ，这样在交互过程中浏览器可以自动的按照规则把这个标识发挥给服务器；若浏览器禁用 Cookie 的话，可以通过  URL 重写机制   将 sessionid 传回服务器。<br>Session 与 Cookie 的对比：<br>实现机制：Session 的实现常常依赖于 Cookie 机制，通过 Cookie 机制回传 SessionID；<br>大小限制：Cookie 有大小限制并且浏览器对每个站点也有 cookie 的个数限制，Session 没有大小限制，理论上只与服务器的内存大小有关；<br>安全性：Cookie 存在安全隐患，通过拦截或本地文件找得到 cookie 后可以进行攻击，而 Session 由于保存在服务器端，相对更加安全；<br>服务器资源消耗：Session 是保存在服务器端上会存在一段时间才会消失，如果 session 过多会增加服务器的压力。<br>Application（ServletContext）：与一个 Web 应用程序相对应，为应用程序提供了一个全局的状态，所有客户都可以使用该状态<br> Application：<br>　　 Application（Java Web 中的 ServletContext）：与一个 Web 应用程序相对应，为应用程序提供了一个全局的状态，所有客户都可以使用该状态。  </p>
+]]></content>
+      <categories>
+        <category>http</category>
+      </categories>
+      <tags>
+        <tag>interview</tag>
+        <tag>http</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>interview/linux</title>
+    <url>/2020/10/10/interview-linux/</url>
+    <content><![CDATA[<h2 id="列举你了解的几个-linux-shell-类型"><a href="#列举你了解的几个-linux-shell-类型" class="headerlink" title="列举你了解的几个 linux shell 类型"></a>列举你了解的几个 linux shell 类型</h2><p>常见的有<br>Bourne Again Shell (简称 bash)、<br>Bourne Shell（简称 sh）、<br>C-Shelll（简称 csh）、<br>Korn Shell（简称 ksh）<br><a href="https://blog.csdn.net/chentiefeng521/article/details/52601311">https://blog.csdn.net/chentiefeng521/article/details/52601311</a></p>
+<h2 id="如何指定-shell-脚本所使用的的-shell-类型"><a href="#如何指定-shell-脚本所使用的的-shell-类型" class="headerlink" title="如何指定 shell 脚本所使用的的 shell 类型"></a>如何指定 shell 脚本所使用的的 shell 类型</h2><p>Shell 第一行加入# /bin/bash</p>
+<h2 id="查看-app-log-的内容的几种方式"><a href="#查看-app-log-的内容的几种方式" class="headerlink" title="查看./app.log 的内容的几种方式"></a>查看./app.log 的内容的几种方式</h2><p>cat ./app.log<br>vi ./app.log<br>more ./app.log</p>
+<h2 id="查看-app-log-的开始-100-行"><a href="#查看-app-log-的开始-100-行" class="headerlink" title="查看./app.log 的开始 100 行"></a>查看./app.log 的开始 100 行</h2><p>head -n 20 filename</p>
+<h2 id="查看-app-log-的最后-100-行"><a href="#查看-app-log-的最后-100-行" class="headerlink" title="查看./app.log 的最后 100 行"></a>查看./app.log 的最后 100 行</h2><p>tail -n 100 ./app.log</p>
+<h2 id="打印-app-log-包含-application-info-的所有行"><a href="#打印-app-log-包含-application-info-的所有行" class="headerlink" title="打印./app.log 包含 application-info 的所有行"></a>打印./app.log 包含 application-info 的所有行</h2><p>cat ./app.log | grep application-info</p>
+<h2 id="查找根目录下所有名为-app-log-的文件（不包含文件夹）"><a href="#查找根目录下所有名为-app-log-的文件（不包含文件夹）" class="headerlink" title="查找根目录下所有名为 app.log 的文件（不包含文件夹）"></a>查找根目录下所有名为 app.log 的文件（不包含文件夹）</h2><p>find / -type f -name ‘app.log’</p>
+<h2 id="Linux-三个权限数字是什么，分别代表什么"><a href="#Linux-三个权限数字是什么，分别代表什么" class="headerlink" title="Linux 三个权限数字是什么，分别代表什么"></a>Linux 三个权限数字是什么，分别代表什么</h2><p>4 读<br>2 写<br>1 执行</p>
+<h2 id="只有拥有者有读写权限。"><a href="#只有拥有者有读写权限。" class="headerlink" title="只有拥有者有读写权限。"></a>只有拥有者有读写权限。</h2><p>-rw——- (600)</p>
+<h2 id="只有拥有者有读写权限；而属组用户和其他用户只有读权限。"><a href="#只有拥有者有读写权限；而属组用户和其他用户只有读权限。" class="headerlink" title="只有拥有者有读写权限；而属组用户和其他用户只有读权限。"></a>只有拥有者有读写权限；而属组用户和其他用户只有读权限。</h2><p>-rw-r–r– (644)</p>
+<h2 id="只有拥有者有读、写、执行权限。"><a href="#只有拥有者有读、写、执行权限。" class="headerlink" title="只有拥有者有读、写、执行权限。"></a>只有拥有者有读、写、执行权限。</h2><p>-rwx—— (700)</p>
+<h2 id="拥有者有读、写、执行权限；而属组用户和其他用户只有读、执行权限。"><a href="#拥有者有读、写、执行权限；而属组用户和其他用户只有读、执行权限。" class="headerlink" title="拥有者有读、写、执行权限；而属组用户和其他用户只有读、执行权限。"></a>拥有者有读、写、执行权限；而属组用户和其他用户只有读、执行权限。</h2><p>-rwxr-xr–x (755)</p>
+<h2 id="拥有者有读、写、执行权限；而属组用户和其他用户只有执行权限。"><a href="#拥有者有读、写、执行权限；而属组用户和其他用户只有执行权限。" class="headerlink" title="拥有者有读、写、执行权限；而属组用户和其他用户只有执行权限。"></a>拥有者有读、写、执行权限；而属组用户和其他用户只有执行权限。</h2><p>-rwx–x–x (711)</p>
+<h2 id="所有用户都有文件读、写权限。"><a href="#所有用户都有文件读、写权限。" class="headerlink" title="所有用户都有文件读、写权限。"></a>所有用户都有文件读、写权限。</h2><p>-rw-rw-rw- (666)</p>
+<h2 id="所有用户都有读、写、执行权限。"><a href="#所有用户都有读、写、执行权限。" class="headerlink" title="所有用户都有读、写、执行权限。"></a>所有用户都有读、写、执行权限。</h2><p>-rwxrwxrwx (777)</p>
+<h2 id="查看当前目录下所有文件的权限"><a href="#查看当前目录下所有文件的权限" class="headerlink" title="查看当前目录下所有文件的权限"></a>查看当前目录下所有文件的权限</h2><p>ls -l</p>
+<h2 id="复制-dic1-文件夹下所有文件和文件夹到-dic2"><a href="#复制-dic1-文件夹下所有文件和文件夹到-dic2" class="headerlink" title="复制 dic1 文件夹下所有文件和文件夹到 dic2"></a>复制 dic1 文件夹下所有文件和文件夹到 dic2</h2><p>cp -rf dic1/* dic2/</p>
+<h2 id="移动当前文件夹下所有文件到上一级文件夹"><a href="#移动当前文件夹下所有文件到上一级文件夹" class="headerlink" title="移动当前文件夹下所有文件到上一级文件夹"></a>移动当前文件夹下所有文件到上一级文件夹</h2><p>mv * ../</p>
+<h2 id="删除当前文件夹无需询问"><a href="#删除当前文件夹无需询问" class="headerlink" title="删除当前文件夹无需询问"></a>删除当前文件夹无需询问</h2><p>rm -rf .</p>
+<h2 id="创建文件夹-abc-cde-efg（多级）"><a href="#创建文件夹-abc-cde-efg（多级）" class="headerlink" title="创建文件夹 ./abc/cde/efg（多级）"></a>创建文件夹 ./abc/cde/efg（多级）</h2><p>mkdir -p ./abc/cde/efg</p>
+<h2 id="写出创建文件的三种方式"><a href="#写出创建文件的三种方式" class="headerlink" title="写出创建文件的三种方式"></a>写出创建文件的三种方式</h2><p>touch aaa.txt<br>vi aaa.txt 保存退出<br>echo ‘’ &gt; aaa.txt</p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>interview</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>interview/java</title>
+    <url>/2020/10/10/interview-java/</url>
+    <content><![CDATA[<h2 id="java-基础"><a href="#java-基础" class="headerlink" title="java 基础"></a>java 基础</h2><p><a href="https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md">https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86.md</a></p>
+<h2 id="Java-疑难点"><a href="#Java-疑难点" class="headerlink" title="Java 疑难点"></a>Java 疑难点</h2><p><a href="https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/Java%E7%96%91%E9%9A%BE%E7%82%B9.md">https://github.com/Snailclimb/JavaGuide/blob/master/docs/java/Java%E7%96%91%E9%9A%BE%E7%82%B9.md</a></p>
+<h2 id="什么是-Java-虚拟机（JVM）？为什么-Java-被称作是“平台无关的编程语言”？"><a href="#什么是-Java-虚拟机（JVM）？为什么-Java-被称作是“平台无关的编程语言”？" class="headerlink" title="什么是 Java 虚拟机（JVM）？为什么 Java 被称作是“平台无关的编程语言”？"></a>什么是 Java 虚拟机（JVM）？为什么 Java 被称作是“平台无关的编程语言”？</h2><p>Java 虚拟机是一个可以执行 Java 字节码的虚拟机进程。Java 源文件被编译成能被 Java 虚拟机执行的字节码文件。</p>
+<p>java 被设计成允许应用程序可以运行在任意的平台，而不需要程序员为每一个平台单独重写或者是重新编译。Java 虚拟机让这个变为可能，因为它知道底层硬件平台的指令长度和其他特性。</p>
+<h2 id="JDK、JRE、JVM-分别是什么关系？"><a href="#JDK、JRE、JVM-分别是什么关系？" class="headerlink" title="JDK、JRE、JVM 分别是什么关系？"></a>JDK、JRE、JVM 分别是什么关系？</h2><p>JDK 即为 Java 开发工具包，包含编写 Java 程序所必须的编译、运行等开发工具以及 JRE。开发工具如：用于编译 Java 程序的 javac 命令、用于启动 JVM 运行 Java 程序的 Java 命令、用于生成文档的 Javadoc 命令以及用于打包的 jar 命令等等。</p>
+<p>JRE 即为 Java 运行环境，提供了运行 Java 应用程序所必须的软件环境，包含有 Java 虚拟机（JVM）和丰富的系统类库。系统类库即为 Java 提前封装好的功能类，只需拿来直接使用即可，可以大大的提高开发效率。</p>
+<p>JVM 即为 Java 虚拟机，提供了字节码文件（.class）的运行环境支持。 简单说，就是 JDK 包含 JRE 包含 JVM。</p>
+<h2 id="Java-支持的数据类型有哪些？"><a href="#Java-支持的数据类型有哪些？" class="headerlink" title="Java 支持的数据类型有哪些？"></a>Java 支持的数据类型有哪些？</h2><p>Java 支持的数据类型包括基本数据类型和引用类型。基本数据类型如下。 整数值型：byte，short，int，long<br>字符型：char<br>浮点类型：float，double<br>布尔型：boolean<br>整数默认 int 型，小数默认是 double 型。Float 和 long 类型的必须加后缀。比如 float f = 100f。</p>
+<p>首先知道 String 是引用类型不是基本类型，引用类型声明的变量是指该变量在内存中实际存储的是一个引用地址，实体在堆中。引用类型包括类、接口、数组等。String 类还是 final 修饰的。</p>
+<h2 id="什么是自动拆装箱？"><a href="#什么是自动拆装箱？" class="headerlink" title="什么是自动拆装箱？"></a>什么是自动拆装箱？</h2><p>自动装箱和拆箱就是基本类型和引用类型之间的转换，至于为什么要转换，因为基本类型转换为引用类型后，就可以 new 对象，从而调用包装类中封装好的方法进行基本类型之间的转换或者 toString（当然用类名直接调用也可以，便于一眼看出该方法是静态的），还有就是如果集合中想存放基本类型，泛型的限定类型只能是对应的包装类型。</p>
+<h2 id="什么是面向对象？"><a href="#什么是面向对象？" class="headerlink" title="什么是面向对象？"></a>什么是面向对象？</h2><p>面向对象是一种思想，世间万物都可以看做一个对象，这里只讨论面向对象编程（OOP），Java 是一个支持并发、基于类和面向对象的计算机编程语言，面向对象软件开发具有以下优点：代码开发模块化，更易维护和修改；代码复用性强；增强代码的可靠性和灵活性；增加代码的可读性。</p>
+<h2 id="面向对象的四大基本特性？"><a href="#面向对象的四大基本特性？" class="headerlink" title="面向对象的四大基本特性？"></a>面向对象的四大基本特性？</h2><p>抽象：提取现实世界中某事物的关键特性，为该事物构建模型的过程。对同一事物在不同的需求下，需要提取的特性可能不一样。得到的抽象模型中一般包含：属性（数据）和操作（行为）。这个抽象模型我们称之为类，对类进行实例化得到对象。</p>
+<p>封装：封装可以使类具有独立性和隔离性，保证类的高内聚。只暴露给类外部或者子类必须的属性和操作。类封装的实现依赖类的修饰符（public、protected 和 private 等）。</p>
+<p>继承：对现有类的一种复用机制。一个类如果继承现有的类，则这个类将拥有被继承类的所有非私有特性（属性和操作）。这里指的继承包含：类的继承和接口的实现。</p>
+<p>多态：多态是在继承的基础上实现的。多态的三个要素：继承、重写和父类引用指向子类对象。父类引用指向不同的子类对象时，调用相同的方法，呈现出不同的行为，就是类多态特性。多态可以分成编译时多态和运行时多态。</p>
+<p>抽象、封装、继承和多态是面向对象的基础。</p>
+<h2 id="amp-与-amp-amp-的区别？"><a href="#amp-与-amp-amp-的区别？" class="headerlink" title="&amp; 与 &amp;&amp; 的区别？"></a>&amp; 与 &amp;&amp; 的区别？</h2><p>&amp; 运算符有两种用法：(1) 按位与，(2) 逻辑与。&amp;&amp; 运算符是短路与运算。</p>
+<p>逻辑与跟短路与的差别是非常巨大的，虽然二者都要求运算符左右两端的布尔值都是 true 整个表达式的值才是 true。&amp;&amp; 之所以称为短路运算是因为，如果 &amp;&amp; 左边的表达式的值是 false，右边的表达式会被直接短路掉，不会进行运算。</p>
+<p>很多时候我们可能都需要用 &amp;&amp; 而不是 &amp;，例如在验证用户登录时判定用户名不是 null 而且不是空字符串，应当写为：</p>
+<p>username != null &amp;&amp; !username.equals(“”)</p>
+<p>二者的顺序不能交换，更不能用 &amp; 运算符，因为第一个条件如果不成立，根本不能进行字符串的 equals 比较，否则会产生 NullPointerException 异常。</p>
+<p>注意：逻辑或运算符（|）和短路或运算符（||）的差别也是如此。</p>
+<h2 id="什么是值传递和引用传递？"><a href="#什么是值传递和引用传递？" class="headerlink" title="什么是值传递和引用传递？"></a>什么是值传递和引用传递？</h2><p>值传递是对基本型变量而言的，传递的是该变量的一个副本，改变副本不影响原变量。</p>
+<p>引用传递一般是对于对象型变量而言的，传递的是该对象地址的一个副本，并不是原对象本身。一般认为，Java 内的传递都是值传递，Java 中实例对象的传递是引用传递。</p>
+<p>是否可以在 static 环境中访问非 static 变量？</p>
+<p>static 变量在 Java 中是属于类的，它在所有的实例中的值是一样的。当类被 Java 虚拟机载入的时候，会对 static 变量进行初始化。如果你的代码尝试不用实例来访问非 static 的变量，编译器会报错，因为这些变量还没有被创建出来，还没有跟任何实例关联上。</p>
+<p>Java 中的方法覆盖（Overriding）和方法重载（Overloading）是什么意思？</p>
+<p>Java 中的方法重载发生在同一个类里面两个或者是多个方法的方法名相同但是参数不同的情况。与此相对，方法覆盖是说子类重新定义了父类的方法。方法覆盖必须有相同的方法名，参数列表和返回类型。覆盖者可能不会限制它所覆盖的方法的访问。</p>
+<h2 id="Java-支持多继承么？"><a href="#Java-支持多继承么？" class="headerlink" title="Java 支持多继承么？"></a>Java 支持多继承么？</h2><p>Java 中类不支持多继承，只支持单继承（即一个类只有一个父类）。 但是 Java 中的接口支持多继承，即一个子接口可以有多个父接口。（接口的作用是用来扩展对象的功能，一个子接口继承多个父接口，说明子接口扩展了多个功能，当类实现接口时，类就扩展了相应的功能）。</p>
+<h2 id="Java-中，什么是构造方法？什么是构造方法重载？什么是复制构造方法？"><a href="#Java-中，什么是构造方法？什么是构造方法重载？什么是复制构造方法？" class="headerlink" title="Java 中，什么是构造方法？什么是构造方法重载？什么是复制构造方法？"></a>Java 中，什么是构造方法？什么是构造方法重载？什么是复制构造方法？</h2><p>当新对象被创建的时候，构造方法会被调用。每一个类都有构造方法。在程序员没有给类提供构造方法的情况下，Java 编译器会为这个类创建一个默认的构造方法。</p>
+<p>Java 中构造方法重载和方法重载很相似。可以为一个类创建多个构造方法。每一个构造方法必须有它自己唯一的参数列表。</p>
+<p>Java 不支持像 C++ 中那样的复制构造方法，这个不同点是因为如果你不自己写构造方法的情况下，Java 不会创建默认的复制构造方法。</p>
+<h2 id="接口和抽象类的区别是什么？"><a href="#接口和抽象类的区别是什么？" class="headerlink" title="接口和抽象类的区别是什么？"></a>接口和抽象类的区别是什么？</h2><p>从设计层面来说，抽象是对类的抽象，是一种模板设计，接口是行为的抽象，是一种行为的规范。</p>
+<p>Java 提供和支持创建抽象类和接口。它们的实现有共同点，不同点在于： 接口中所有的方法隐含的都是抽象的，而抽象类则可以同时包含抽象和非抽象的方法。</p>
+<p>类可以实现很多个接口，但是只能继承一个抽象类。类可以不实现抽象类和接口声明的所有方法，当然，在这种情况下，类也必须得声明成是抽象的。</p>
+<p>抽象类可以在不提供接口方法实现的情况下实现接口。 Java 接口中声明的变量默认都是 final 的。抽象类可以包含非 final 的变量。Java 接口中的成员函数默认是 public 的。抽象类的成员函数可以是 private，protected 或者是 public。</p>
+<p>接口是绝对抽象的，不可以被实例化。抽象类也不可以被实例化，但是，如果它包含 main 方法的话是可以被调用的。也可以参考 JDK8 中抽象类和接口的区别。</p>
+<h2 id="用最有效率的方法计算-2-乘以-8？"><a href="#用最有效率的方法计算-2-乘以-8？" class="headerlink" title="用最有效率的方法计算 2 乘以 8？"></a>用最有效率的方法计算 2 乘以 8？</h2><p>2 &lt;&lt; 3（左移 3 位相当于乘以 2 的 3 次方，右移 3 位相当于除以 2 的 3 次方）。</p>
+<h2 id="手写单例模式（饿汉和懒汉模式）和工厂模式？"><a href="#手写单例模式（饿汉和懒汉模式）和工厂模式？" class="headerlink" title="手写单例模式（饿汉和懒汉模式）和工厂模式？"></a>手写单例模式（饿汉和懒汉模式）和工厂模式？</h2><p>饿汉模式<br>//饿汉式单例类.在类初始化时，已经自行实例化<br>public class Singleton1 {<br>//私有的默认构造子<br>private Singleton1() {}<br>//已经自行实例化<br>private static final Singleton1 single = new Singleton1();<br>//静态工厂方法<br>public static Singleton1 getInstance() {<br>return single;<br>}<br>} 懒汉模式<br>//懒汉式单例类.在第一次调用的时候实例化<br>public class Singleton2 {<br>//私有的默认构造子<br>private Singleton2() {}<br>//注意，这里没有 final<br>private static Singleton2 single=null;<br>//静态工厂方法<br>public synchronized static Singleton2 getInstance() {<br>if (single == null) {<br>single = new Singleton2();<br>}<br>return single;<br>}<br>}<br>工厂模式，也可以参考之前的设计模式中的工厂模式，文末有链接。<br>interface IFactory{<br>public IProduct createProduct();<br>}<br>Class Factory implements IFactory{<br>public IProduct createProduct()<br>{<br>return new Product();<br>}<br>}<br>Public class client{<br>Public Static void main (String [] args){<br>IFactory factory=new Factory();<br>IProduct product=factory.createProduct();<br>product.ProductMethod();<br>}<br>}</p>
+<h2 id="String-和-StringBuilder、StringBuffer-的区别？"><a href="#String-和-StringBuilder、StringBuffer-的区别？" class="headerlink" title="String 和 StringBuilder、StringBuffer 的区别？"></a>String 和 StringBuilder、StringBuffer 的区别？</h2><p>Java 平台提供了两种类型的字符串：String 和 StringBuffer/StringBuilder，它们可以储存和操作字符串。</p>
+<p>其中 String 是只读字符串，也就意味着 String 引用的字符串内容是不能被改变的。</p>
+<p>而 StringBuffer/StringBuilder 类表示的字符串对象可以直接进行修改。StringBuilder 是 Java 5 中引入的，它和 StringBuffer 的方法完全相同，区别在于它是在单线程环境下使用的，因为它的所有方面都没有被 synchronized 修饰，因此它的效率也比 StringBuffer 要高。</p>
+<h2 id="Java-集合框架有哪些？说出一些集合框架的优点？"><a href="#Java-集合框架有哪些？说出一些集合框架的优点？" class="headerlink" title="Java 集合框架有哪些？说出一些集合框架的优点？"></a>Java 集合框架有哪些？说出一些集合框架的优点？</h2><p>每种编程语言中都有集合，最初的 Java 版本包含几种集合类：Vector、Stack、HashTable 和 Array。随着集合的广泛使用，Java1.2 提出了囊括所有集合接口、实现和算法的集合框架。在保证线程安全的情况下使用泛型和并发集合类，Java 已经经历了很久。它还包括在 Java 并发包中，阻塞接口以及它们的实现。集合框架的部分优点如下： （1）使用核心集合类降低开发成本，而非实现我们自己的集合类。 （2）随着使用经过严格测试的集合框架类，代码质量会得到提高。 （3）通过使用 JDK 附带的集合类，可以降低代码维护成本。 （4）复用性和可操作性。</p>
+<h2 id="集合框架中的泛型有什么优点？"><a href="#集合框架中的泛型有什么优点？" class="headerlink" title="集合框架中的泛型有什么优点？"></a>集合框架中的泛型有什么优点？</h2><p>Java1.5 引入了泛型，所有的集合接口和实现都大量地使用它。泛型允许我们为集合提供一个可以容纳的对象类型。因此，如果你添加其它类型的任何元素，它会在编译时报错。这避免了在运行时出现 ClassCastException，因为你将会在编译时得到报错信息。泛型也使得代码整洁，我们不需要使用显式转换和 instanceOf 操作符。它也给运行时带来好处，因为不会产生类型检查的字节码指令。</p>
+<h2 id="Java-集合框架的基础接口有哪些？"><a href="#Java-集合框架的基础接口有哪些？" class="headerlink" title="Java 集合框架的基础接口有哪些？"></a>Java 集合框架的基础接口有哪些？</h2><p>Collection 为集合层级的根接口。一个集合代表一组对象，这些对象即为它的元素。Java 平台不提供这个接口任何直接的实现。</p>
+<p>Set 是一个不能包含重复元素的集合。这个接口对数学集合抽象进行建模，被用来代表集合，就如一副牌。</p>
+<p>List 是一个有序集合，可以包含重复元素。你可以通过它的索引来访问任何元素。List 更像长度动态变换的数组。</p>
+<p>Map 是一个将 key 映射到 value 的对象。一个 Map 不能包含重复的 key，每个 key 最多只能映射一个 value。</p>
+<p>一些其它的接口有 Queue、Dequeue、SortedSet、SortedMap 和 ListIterator。</p>
+<h2 id="为何-Collection-不从-Cloneable-和-Serializable-接口继承？"><a href="#为何-Collection-不从-Cloneable-和-Serializable-接口继承？" class="headerlink" title="为何 Collection 不从 Cloneable 和 Serializable 接口继承？"></a>为何 Collection 不从 Cloneable 和 Serializable 接口继承？</h2><p>Collection 接口指定一组对象，对象即为它的元素。如何维护这些元素由 Collection 的具体实现决定。例如，一些如 List 的 Collection 实现允许重复的元素，而其它的如 Set 就不允许。很多 Collection 实现有一个公有的 clone 方法。然而，把它放到集合的所有实现中也是没有意义的。这是因为 Collection 是一个抽象表现，重要的是实现。</p>
+<p>当与具体实现打交道的时候，克隆或序列化的语义和含义才发挥作用。所以，具体实现应该决定如何对它进行克隆或序列化，或它是否可以被克隆或序列化。在所有的实现中授权克隆和序列化，最终导致更少的灵活性和更多的限制，特定的实现应该决定它是否可以被克隆和序列化。</p>
+<h2 id="为何-Map-接口不继承-Collection-接口？"><a href="#为何-Map-接口不继承-Collection-接口？" class="headerlink" title="为何 Map 接口不继承 Collection 接口？"></a>为何 Map 接口不继承 Collection 接口？</h2><p>尽管 Map 接口和它的实现也是集合框架的一部分，但 Map 不是集合，集合也不是 Map。因此，Map 继承 Collection 毫无意义，反之亦然。</p>
+<p>如果 Map 继承 Collection 接口，那么元素去哪儿？Map 包含 key-value 对，它提供抽取 key 或 value 列表集合的方法，但是它不适合“一组对象”规范。</p>
+<h2 id="什么是迭代器-Iterator-？"><a href="#什么是迭代器-Iterator-？" class="headerlink" title="什么是迭代器(Iterator)？"></a>什么是迭代器(Iterator)？</h2><p>Iterator 接口提供了很多对集合元素进行迭代的方法。每一个集合类都包含了可以返回迭代器实例的迭代方法。迭代器可以在迭代的过程中删除底层集合的元素,但是不可以直接调用集合的 remove(Object Obj) 删除，可以通过迭代器的 remove() 方法删除。</p>
+<h2 id="Iterator-和-ListIterator-的区别是什么？"><a href="#Iterator-和-ListIterator-的区别是什么？" class="headerlink" title="Iterator 和 ListIterator 的区别是什么？"></a>Iterator 和 ListIterator 的区别是什么？</h2><p>Iterator 可用来遍历 Set 和 List 集合，但是 ListIterator 只能用来遍历 List。</p>
+<p>Iterator 对集合只能是前向遍历，ListIterator 既可以前向也可以后向。</p>
+<p>ListIterator 实现了 Iterator 接口，并包含其他的功能。比如：增加元素，替换元素，获取前一个和后一个元素的索引等等。</p>
+<h2 id="Java-中的-HashMap-的工作原理是什么？"><a href="#Java-中的-HashMap-的工作原理是什么？" class="headerlink" title="Java 中的 HashMap 的工作原理是什么？"></a>Java 中的 HashMap 的工作原理是什么？</h2><p>我们知道在 Java 中最常用的两种结构是数组和模拟指针（引用），几乎所有的数据结构都可以利用这两种来组合实现，HashMap 也是如此。实际上 HashMap 是一个“链表散列”。</p>
+<p>HashMap 是基于 hashing 的原理，我们使用 put(key, value) 存储对象到 HashMap 中，使用 get(key) 从 HashMap 中获取对象。当我们给 put() 方法传递键和值时，我们先对键调用 hashCode() 方法，返回的 hashCode 用于找到 bucket 位置来储存 Entry 对象。</p>
+<h2 id="当两个对象的-hashcode-相同会发生什么？"><a href="#当两个对象的-hashcode-相同会发生什么？" class="headerlink" title="当两个对象的 hashcode 相同会发生什么？"></a>当两个对象的 hashcode 相同会发生什么？</h2><p>因为 hashcode 相同，所以它们的 bucket 位置相同，“碰撞”会发生。因为 HashMap 使用链表存储对象，这个 Entry（包含有键值对的 Map.Entry 对象）会存储在链表中。</p>
+<h2 id="如果两个键的-hashcode-相同，你如何获取值对象？"><a href="#如果两个键的-hashcode-相同，你如何获取值对象？" class="headerlink" title="如果两个键的 hashcode 相同，你如何获取值对象？"></a>如果两个键的 hashcode 相同，你如何获取值对象？</h2><p>当我们调用 get() 方法，HashMap 会使用键对象的 hashcode 找到 bucket 位置，然后会调用 keys.equals() 方法去找到链表中正确的节点，最终找到要找的值对象。</p>
+<h2 id="hashCode-和-equals-方法有何重要性？"><a href="#hashCode-和-equals-方法有何重要性？" class="headerlink" title="hashCode() 和 equals() 方法有何重要性？"></a>hashCode() 和 equals() 方法有何重要性？</h2><p>HashMap 使用 Key 对象的 hashCode() 和 equals() 方法去决定 key-value 对的索引。当我们试着从 HashMap 中获取值的时候，这些方法也会被用到。</p>
+<p>如果这些方法没有被正确地实现，在这种情况下，两个不同 Key 也许会产生相同的 hashCode() 和 equals() 输出，HashMap 将会认为它们是相同的，然后覆盖它们，而非把它们存储到不同的地方。</p>
+<p>同样的，所有不允许存储重复数据的集合类都使用 hashCode() 和 equals() 去查找重复，所以正确实现它们非常重要。equals() 和 hashCode() 的实现应该遵循以下规则：</p>
+<p>如果 o1.equals(o2)，那么 o1.hashCode() == o2.hashCode()总是为 true 的。 如果 o1.hashCode() == o2.hashCode()，并不意味着 o1.equals(o2)会为 true。</p>
+<h2 id="HashMap-和-HashTable-有什么区别？"><a href="#HashMap-和-HashTable-有什么区别？" class="headerlink" title="HashMap 和 HashTable 有什么区别？"></a>HashMap 和 HashTable 有什么区别？</h2><p>HashMap 是非线程安全的，HashTable 是线程安全的。<br>HashMap 的键和值都允许有 null 值存在，而 HashTable 则不行。<br>因为线程安全的问题，HashMap 效率比 HashTable 的要高。<br>HashTable 是同步的，而 HashMap 不是。因此，HashMap 更适合于单线程环境，而 HashTable 适合于多线程环境。<br>一般现在不建议用 HashTable，一是 HashTable 是遗留类，内部实现很多没优化和冗余。二是即使在多线程环境下，现在也有同步的 ConcurrentHashMap 替代，没有必要因为是多线程而用 HashTable。</p>
+<h2 id="如何决定选用-HashMap-还是-TreeMap？"><a href="#如何决定选用-HashMap-还是-TreeMap？" class="headerlink" title="如何决定选用 HashMap 还是 TreeMap？"></a>如何决定选用 HashMap 还是 TreeMap？</h2><p>对于在 Map 中插入、删除和定位元素这类操作，HashMap 是最好的选择。然而，假如你需要对一个有序的 key 集合进行遍历， TreeMap 是更好的选择。基于你的 collection 的大小，也许向 HashMap 中添加元素会更快，将 map 换为 TreeMap 进行有序 key 的遍历。</p>
+<h2 id="ArrayList-和-Vector-有何异同点？"><a href="#ArrayList-和-Vector-有何异同点？" class="headerlink" title="ArrayList 和 Vector 有何异同点？"></a>ArrayList 和 Vector 有何异同点？</h2><p>ArrayList 和 Vector 在很多时候都很类似。<br>（1）两者都是基于索引的，内部由一个数组支持。<br>（2）两者维护插入的顺序，我们可以根据插入顺序来获取元素。<br>（3）ArrayList 和 Vector 的迭代器实现都是 fail-fast 的。<br>（4）ArrayList 和 Vector 两者允许 null 值，也可以使用索引值对元素进行随机访问。<br>以下是 ArrayList 和 Vector 的不同点。<br>（1）Vector 是同步的，而 ArrayList 不是。然而，如果你寻求在迭代的时候对列表进行改变，你应该使用 CopyOnWriteArrayList。<br>（2）ArrayList 比 Vector 快，它因为有同步，不会过载。<br>（3）ArrayList 更加通用，因为我们可以使用 Collections 工具类轻易地获取同步列表和只读列表。</p>
+<h2 id="Array-和-ArrayList-有何区别？什么时候更适合用-Array？"><a href="#Array-和-ArrayList-有何区别？什么时候更适合用-Array？" class="headerlink" title="Array 和 ArrayList 有何区别？什么时候更适合用 Array？"></a>Array 和 ArrayList 有何区别？什么时候更适合用 Array？</h2><p>Array 可以容纳基本类型和对象，而 ArrayList 只能容纳对象。 Array 是指定大小的，而 ArrayList 大小是固定的。Array 没有提供 ArrayList 那么多功能，比如 addAll、removeAll 和 iterator 等。尽管 ArrayList 明显是更好的选择，但也有些时候 Array 比较好用，比如下面的三种情况。<br>（1）如果列表的大小已经指定，大部分情况下是存储和遍历它们。<br>（2）对于遍历基本数据类型，尽管 Collections 使用自动装箱来减轻编码任务，在指定大小的基本类型的列表上工作也会变得很慢。<br>（3）如果你要使用多维数组，使用 [][] 比 List。</p>
+<h2 id="快速失败（fail-fast）和安全失败（fail-safe）的区别是什么？"><a href="#快速失败（fail-fast）和安全失败（fail-safe）的区别是什么？" class="headerlink" title="快速失败（fail-fast）和安全失败（fail-safe）的区别是什么？"></a>快速失败（fail-fast）和安全失败（fail-safe）的区别是什么？</h2><p>快速失败：当你在迭代一个集合的时候，如果有另一个线程正在修改你正在访问的那个集合时，就会抛出一个 ConcurrentModification 异常。 在 java.util 包下的都是快速失败。</p>
+<p>安全失败：你在迭代的时候会去底层集合做一个拷贝，所以你在修改上层集合的时候是不会受影响的，不会抛出 ConcurrentModification 异常。在 java.util.concurrent 包下的全是安全失败的。</p>
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>interview</tag>
+        <tag>java</tag>
+      </tags>
+  </entry>
+</search>
