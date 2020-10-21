@@ -1,29 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Android-studio plugins</title>
-    <url>/2018/05/09/android-studio-plugin/</url>
-    <content><![CDATA[<p>工欲善其事必先利其器</p>
-<a id="more"></a>
-<h2 id="必备"><a href="#必备" class="headerlink" title="必备"></a>必备</h2><p>ADB idea<br>Adds the following ADB commands to Android Studio and Intellij.<br>方便快捷执行 ADB 常用命令</p>
-<p>Gradle Killer<br>This plugin kills Gradle tasks using the system task manager with just one click. No more struggling with “ps” or playing Russian roulette with “java.exe” processes! Just click the icon in the “Run” section and you’re done!<br>在Gradle执行期间强制终止Gradle运行</p>
-<h2 id="Java相关"><a href="#Java相关" class="headerlink" title="Java相关"></a>Java相关</h2><p>Alibaba Java Coding Guidelines<br>Alibaba Java Coding Guidelines plugin support.<br>Github：<a href="https://github.com/alibaba/p3c">https://github.com/alibaba/p3c</a><br>Java手册：PDF</p>
-<p>Android Parcelable code generator<br>Plugin which generates Android Parcelable boilerplate code for you.</p>
-<p>GsonFormat<br>quickly to convert a JSON string to an InnerClassEntity class.</p>
-<h2 id="Kotlin相关"><a href="#Kotlin相关" class="headerlink" title="Kotlin相关"></a>Kotlin相关</h2><p>Parcelable Code Generator(for kotlin)<br>Parcelable Code Generator is a plugin which generates Android Parcelable boilerplate code for kotlin class.</p>
-<p>Json to Kotlin Class(JsonToKotlinClass)<br>Plugin for Kotlin to convert Json String into Kotlin data class code quickly</p>
-]]></content>
-      <categories>
-        <category>android</category>
-      </categories>
-      <tags>
-        <tag>android</tag>
-        <tag>tools</tag>
-        <tag>buildtime</tag>
-        <tag>android-studio</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Android 开发必备工具合集</title>
     <url>/2018/05/09/android-tools/</url>
     <content><![CDATA[<p>工欲善其事必先利其器</p>
@@ -46,6 +23,29 @@
         <tag>android</tag>
         <tag>tools</tag>
         <tag>buildtime</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Android-studio plugins</title>
+    <url>/2018/05/09/android-studio-plugin/</url>
+    <content><![CDATA[<p>工欲善其事必先利其器</p>
+<a id="more"></a>
+<h2 id="必备"><a href="#必备" class="headerlink" title="必备"></a>必备</h2><p>ADB idea<br>Adds the following ADB commands to Android Studio and Intellij.<br>方便快捷执行 ADB 常用命令</p>
+<p>Gradle Killer<br>This plugin kills Gradle tasks using the system task manager with just one click. No more struggling with “ps” or playing Russian roulette with “java.exe” processes! Just click the icon in the “Run” section and you’re done!<br>在Gradle执行期间强制终止Gradle运行</p>
+<h2 id="Java相关"><a href="#Java相关" class="headerlink" title="Java相关"></a>Java相关</h2><p>Alibaba Java Coding Guidelines<br>Alibaba Java Coding Guidelines plugin support.<br>Github：<a href="https://github.com/alibaba/p3c">https://github.com/alibaba/p3c</a><br>Java手册：PDF</p>
+<p>Android Parcelable code generator<br>Plugin which generates Android Parcelable boilerplate code for you.</p>
+<p>GsonFormat<br>quickly to convert a JSON string to an InnerClassEntity class.</p>
+<h2 id="Kotlin相关"><a href="#Kotlin相关" class="headerlink" title="Kotlin相关"></a>Kotlin相关</h2><p>Parcelable Code Generator(for kotlin)<br>Parcelable Code Generator is a plugin which generates Android Parcelable boilerplate code for kotlin class.</p>
+<p>Json to Kotlin Class(JsonToKotlinClass)<br>Plugin for Kotlin to convert Json String into Kotlin data class code quickly</p>
+]]></content>
+      <categories>
+        <category>android</category>
+      </categories>
+      <tags>
+        <tag>android</tag>
+        <tag>tools</tag>
+        <tag>buildtime</tag>
+        <tag>android-studio</tag>
       </tags>
   </entry>
   <entry>
@@ -116,49 +116,6 @@
       </tags>
   </entry>
   <entry>
-    <title>interview/http</title>
-    <url>/2020/10/10/interview-http/</url>
-    <content><![CDATA[<h2 id="http-协议中各个响应状态返回值的含义"><a href="#http-协议中各个响应状态返回值的含义" class="headerlink" title="http 协议中各个响应状态返回值的含义"></a>http 协议中各个响应状态返回值的含义</h2><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status">https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status</a></p>
-<h2 id="HTTP-八种方法"><a href="#HTTP-八种方法" class="headerlink" title="HTTP 八种方法"></a>HTTP 八种方法</h2><p>OPTIONS<br>GET<br>HEAD<br>POST<br>PUT<br>DELETE<br>TRACE<br>CONNECT</p>
-<h2 id="POST-GET-区别"><a href="#POST-GET-区别" class="headerlink" title="POST GET 区别"></a>POST GET 区别</h2><p>get 把请求的数据放在 url 上，即 HTTP 协议头上，其格式为：以?分割 URL 和传输数据，参数之间以&amp;相连。数据如果是英文字母/数字，原样发送，如果是空格，转换为+，如果是中文/其他字符，则直接把字符串用 BASE64 加密，及“%”加上“字符串的 16 进制 ASCII 码”。post 把数据放在 HTTP 的包体内（requrest body）。<br>get 提交的数据最大是 2k（原则上 url 长度无限制，那么 get 提交的数据也没有限制咯？限制实际上取决于浏览器，(大多数)浏览器通常都会限制 url 长度在 2K 个字节，即使(大多数)服务器最多处理 64K 大小的 url。也没有卵用。）。post 理论上没有限制。实际上 IIS4 中最大量为 80KB，IIS5 中为 100KB。<br>GET 产生一个 TCP 数据包，浏览器会把 http header 和 data 一并发送出去，服务器响应 200(返回数据);POST 产生两个 TCP 数据包，浏览器先发送 header，服务器响应 100 continue，浏览器再发送 data，服务器响应 200 ok(返回数据)。<br>GET 在浏览器回退时是无害的，POST 会再次提交请求。<br>GET 产生的 URL 地址可以被 Bookmark，而 POST 不可以。<br>GET 请求会被浏览器主动 cache，而 POST 不会，除非手动设置。<br>GET 请求只能进行 url 编码，而 POST 支持多种编码方式。<br>GET 请求参数会被完整保留在浏览器历史记录里，而 POST 中的参数不会被保留。<br>GET 只接受 ASCII 字符的参数的数据类型，而 POST 没有限制<br>那么，post 那么好为什么还用 get？get 效率高！。  </p>
-<h2 id="REST-接口规范-RESTful-的-6-大原则"><a href="#REST-接口规范-RESTful-的-6-大原则" class="headerlink" title="REST 接口规范, RESTful 的 6 大原则"></a>REST 接口规范, RESTful 的 6 大原则</h2><p><a href="https://zhuanlan.zhihu.com/p/90367875">https://zhuanlan.zhihu.com/p/90367875</a></p>
-<h2 id="3-次握手，4-次挥手"><a href="#3-次握手，4-次挥手" class="headerlink" title="3 次握手，4 次挥手"></a>3 次握手，4 次挥手</h2><p>第一次握手(SYN=1, seq=x):</p>
-<p>客户端发送一个 TCP 的 SYN 标志位置 1 的包，指明客户端打算连接的服务器的端口，以及初始序号 X,保存在包头的序列号(Sequence Number)字段里。</p>
-<p>发送完毕后，客户端进入 SYN_SEND 状态。</p>
-<p>第二次握手(SYN=1, ACK=1, seq=y, ACKnum=x+1):</p>
-<p>服务器发回确认包(ACK)应答。即 SYN 标志位和 ACK 标志位均为 1。服务器端选择自己 ISN 序列号，放到 Seq 域里，同时将确认序号(Acknowledgement Number)设置为客户的 ISN 加 1，即 X+1。 发送完毕后，服务器端进入 SYN_RCVD 状态。</p>
-<p>第三次握手(ACK=1，ACKnum=y+1)</p>
-<p>客户端再次发送确认包(ACK)，SYN 标志位为 0，ACK 标志位为 1，并且把服务器发来 ACK 的序号字段+1，放在确定字段中发送给对方，并且在数据段放写 ISN 的+1</p>
-<p>发送完毕后，客户端进入 ESTABLISHED 状态，当服务器端接收到这个包时，也进入 ESTABLISHED 状态，TCP 握手结束。<br>TCP 的连接的拆除需要发送四个包，因此称为四次挥手(Four-way handshake)，也叫做改进的三次握手。客户端或服务器均可主动发起挥手动作，在 socket 编程中，任何一方执行 close() 操作即可产生挥手操作。</p>
-<p>第一次挥手(FIN=1，seq=x)</p>
-<p>假设客户端想要关闭连接，客户端发送一个 FIN 标志位置为 1 的包，表示自己已经没有数据可以发送了，但是仍然可以接受数据。</p>
-<p>发送完毕后，客户端进入 FIN_WAIT_1 状态。</p>
-<p>第二次挥手(ACK=1，ACKnum=x+1)</p>
-<p>服务器端确认客户端的 FIN 包，发送一个确认包，表明自己接受到了客户端关闭连接的请求，但还没有准备好关闭连接。</p>
-<p>发送完毕后，服务器端进入 CLOSE_WAIT 状态，客户端接收到这个确认包之后，进入 FIN_WAIT_2 状态，等待服务器端关闭连接。</p>
-<p>第三次挥手(FIN=1，seq=y)</p>
-<p>服务器端准备好关闭连接时，向客户端发送结束连接请求，FIN 置为 1。</p>
-<p>发送完毕后，服务器端进入 LAST_ACK 状态，等待来自客户端的最后一个 ACK。</p>
-<p>第四次挥手(ACK=1，ACKnum=y+1)</p>
-<p>客户端接收到来自服务器端的关闭请求，发送一个确认包，并进入 TIME_WAIT 状态，等待可能出现的要求重传的 ACK 包。</p>
-<p>服务器端接收到这个确认包之后，关闭连接，进入 CLOSED 状态。</p>
-<p>客户端等待了某个固定时间（两个最大段生命周期，2MSL，2 Maximum Segment Lifetime）之后，没有收到服务器端的 ACK ，认为服务器端已经正常关闭连接，于是自己也关闭连接，进入 CLOSED 状态。<br><a href="https://hit-alibaba.github.io/interview/basic/network/TCP.html">https://hit-alibaba.github.io/interview/basic/network/TCP.html</a></p>
-<p><a href="https://blog.csdn.net/qzcsu/article/details/72861891">https://blog.csdn.net/qzcsu/article/details/72861891</a></p>
-<h2 id="TCP-和-UDP-区别"><a href="#TCP-和-UDP-区别" class="headerlink" title="TCP 和 UDP 区别"></a>TCP 和 UDP 区别</h2><p>TCP (Transmission Control Protocol)和 UDP(User Datagram Protocol)协议属于传输层协议，它们之间的区别包括：<br>TCP 是面向连接的，UDP 是无连接的；<br>TCP 是可靠的，UDP 是不可靠的；<br>TCP 只支持点对点通信，UDP 支持一对一、一对多、多对一、多对多的通信模式；<br>TCP 是面向字节流的，UDP 是面向报文的；<br>TCP 有拥塞控制机制;UDP 没有拥塞控制，适合媒体通信；<br>TCP 首部开销(20 个字节)比 UDP 的首部开销(8 个字节)要大；  </p>
-<h2 id="http-和-https-区别"><a href="#http-和-https-区别" class="headerlink" title="http 和 https 区别"></a>http 和 https 区别</h2><p>Http 协议运行在 TCP 之上，明文传输，客户端与服务器端都无法验证对方的身份；Https 是身披 SSL(Secure Socket Layer)外壳的 Http，运行于 SSL 上，SSL 运行于 TCP 之上，是添加了加密和认证机制的 HTTP。二者之间存在如下不同：<br>端口不同：Http 与 Http 使用不同的连接方式，用的端口也不一样，前者是 80，后者是 443；<br>资源消耗：和 HTTP 通信相比，Https 通信会由于加减密处理消耗更多的 CPU 和内存资源；<br>开销：Https 通信需要证书，而证书一般需要向认证机构购买；　 Https 的加密机制是一种共享密钥加密和公开密钥加密并用的混合加密机制。  </p>
-<h2 id="对称加密与非对称加密"><a href="#对称加密与非对称加密" class="headerlink" title="对称加密与非对称加密"></a>对称加密与非对称加密</h2><p>对称密钥加密是指加密和解密使用同一个密钥的方式，这种方式存在的最大问题就是密钥发送问题，即如何安全地将密钥发给对方；而非对称加密是指使用一对非对称密钥，即公钥和私钥，公钥可以随意发布，但私钥只有自己知道。发送密文的一方使用对方的公钥进行加密处理，对方接收到加密信息后，使用自己的私钥进行解密。<br>　　由于非对称加密的方式不需要发送用来解密的私钥，所以可以保证安全性；但是和对称加密比起来，它非常的慢，所以我们还是要用对称加密来传送消息，但对称加密所使用的密钥我们可以通过非对称加密的方式发送出去。</p>
-<h2 id="http1-0-和-http2-0-区别"><a href="#http1-0-和-http2-0-区别" class="headerlink" title="http1.0 和 http2.0 区别"></a>http1.0 和 http2.0 区别</h2><p>新的二进制格式（Binary Format），HTTP1.x 的解析是基于文本。基于文本协议的格式解析存在天然缺陷，文本的表现形式有多样性，要做到健壮性考虑的场景必然很多，二进制则不同，只认 0 和 1 的组合。基于这种考虑 HTTP2.0 的协议解析决定采用二进制格式，实现方便且健壮。<br>多路复用（MultiPlexing），即连接共享，即每一个 request 都是是用作连接共享机制的。一个 request 对应一个 id，这样一个连接上可以有多个 request，每个连接的 request 可以随机的混杂在一起，接收方可以根据 request 的 id 将 request 再归属到各自不同的服务端请求里面。<br>header 压缩，如上文中所言，对前面提到过 HTTP1.x 的 header 带有大量信息，而且每次都要重复发送，HTTP2.0 使用 encoder 来减少需要传输的 header 大小，通讯双方各自 cache 一份 header fields 表，既避免了重复 header 的传输，又减小了需要传输的大小。<br>服务端推送（server push），同 SPDY 一样，HTTP2.0 也具有 server push 功能。</p>
-<h2 id="Session、Cookie-与-Application"><a href="#Session、Cookie-与-Application" class="headerlink" title="Session、Cookie 与 Application"></a>Session、Cookie 与 Application</h2><p>Cookie：<br>Cookie 和 Session 都是客户端与服务器之间保持状态的解决方案，具体来说，cookie 机制采用的是在客户端保持状态的方案，而 session 机制采用的是在服务器端保持状态的方案。<br>Session：<br>同样地，会话状态也可以保存在服务器端。客户端请求服务器，如果服务器记录该用户状态，就获取 Session 来保存状态，这时，如果服务器已经为此客户端创建过 session，服务器就按照 sessionid 把这个 session 检索出来使用；如果客户端请求不包含 sessionid，则为此客户端创建一个 session 并且生成一个与此 session 相关联的 sessionid，并将这个 sessionid 在本次响应中返回给客户端保存。保存这个 sessionid 的方式可以采用  cookie 机制  ，这样在交互过程中浏览器可以自动的按照规则把这个标识发挥给服务器；若浏览器禁用 Cookie 的话，可以通过  URL 重写机制   将 sessionid 传回服务器。<br>Session 与 Cookie 的对比：<br>实现机制：Session 的实现常常依赖于 Cookie 机制，通过 Cookie 机制回传 SessionID；<br>大小限制：Cookie 有大小限制并且浏览器对每个站点也有 cookie 的个数限制，Session 没有大小限制，理论上只与服务器的内存大小有关；<br>安全性：Cookie 存在安全隐患，通过拦截或本地文件找得到 cookie 后可以进行攻击，而 Session 由于保存在服务器端，相对更加安全；<br>服务器资源消耗：Session 是保存在服务器端上会存在一段时间才会消失，如果 session 过多会增加服务器的压力。<br>Application（ServletContext）：与一个 Web 应用程序相对应，为应用程序提供了一个全局的状态，所有客户都可以使用该状态<br> Application：<br>　　 Application（Java Web 中的 ServletContext）：与一个 Web 应用程序相对应，为应用程序提供了一个全局的状态，所有客户都可以使用该状态。  </p>
-]]></content>
-      <categories>
-        <category>http</category>
-      </categories>
-      <tags>
-        <tag>interview</tag>
-        <tag>http</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>interview/git</title>
     <url>/2020/10/10/interview-git/</url>
     <content><![CDATA[<h2 id="Q1-Git-和-SVN-有什么区别？"><a href="#Q1-Git-和-SVN-有什么区别？" class="headerlink" title="Q1. Git 和 SVN 有什么区别？"></a>Q1. Git 和 SVN 有什么区别？</h2><table>
@@ -226,6 +183,82 @@
       </tags>
   </entry>
   <entry>
+    <title>interview/http</title>
+    <url>/2020/10/10/interview-http/</url>
+    <content><![CDATA[<h2 id="http-协议中各个响应状态返回值的含义"><a href="#http-协议中各个响应状态返回值的含义" class="headerlink" title="http 协议中各个响应状态返回值的含义"></a>http 协议中各个响应状态返回值的含义</h2><p><a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status">https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Status</a></p>
+<h2 id="HTTP-八种方法"><a href="#HTTP-八种方法" class="headerlink" title="HTTP 八种方法"></a>HTTP 八种方法</h2><p>OPTIONS<br>GET<br>HEAD<br>POST<br>PUT<br>DELETE<br>TRACE<br>CONNECT</p>
+<h2 id="POST-GET-区别"><a href="#POST-GET-区别" class="headerlink" title="POST GET 区别"></a>POST GET 区别</h2><p>get 把请求的数据放在 url 上，即 HTTP 协议头上，其格式为：以?分割 URL 和传输数据，参数之间以&amp;相连。数据如果是英文字母/数字，原样发送，如果是空格，转换为+，如果是中文/其他字符，则直接把字符串用 BASE64 加密，及“%”加上“字符串的 16 进制 ASCII 码”。post 把数据放在 HTTP 的包体内（requrest body）。<br>get 提交的数据最大是 2k（原则上 url 长度无限制，那么 get 提交的数据也没有限制咯？限制实际上取决于浏览器，(大多数)浏览器通常都会限制 url 长度在 2K 个字节，即使(大多数)服务器最多处理 64K 大小的 url。也没有卵用。）。post 理论上没有限制。实际上 IIS4 中最大量为 80KB，IIS5 中为 100KB。<br>GET 产生一个 TCP 数据包，浏览器会把 http header 和 data 一并发送出去，服务器响应 200(返回数据);POST 产生两个 TCP 数据包，浏览器先发送 header，服务器响应 100 continue，浏览器再发送 data，服务器响应 200 ok(返回数据)。<br>GET 在浏览器回退时是无害的，POST 会再次提交请求。<br>GET 产生的 URL 地址可以被 Bookmark，而 POST 不可以。<br>GET 请求会被浏览器主动 cache，而 POST 不会，除非手动设置。<br>GET 请求只能进行 url 编码，而 POST 支持多种编码方式。<br>GET 请求参数会被完整保留在浏览器历史记录里，而 POST 中的参数不会被保留。<br>GET 只接受 ASCII 字符的参数的数据类型，而 POST 没有限制<br>那么，post 那么好为什么还用 get？get 效率高！。  </p>
+<h2 id="REST-接口规范-RESTful-的-6-大原则"><a href="#REST-接口规范-RESTful-的-6-大原则" class="headerlink" title="REST 接口规范, RESTful 的 6 大原则"></a>REST 接口规范, RESTful 的 6 大原则</h2><p><a href="https://zhuanlan.zhihu.com/p/90367875">https://zhuanlan.zhihu.com/p/90367875</a></p>
+<h2 id="3-次握手，4-次挥手"><a href="#3-次握手，4-次挥手" class="headerlink" title="3 次握手，4 次挥手"></a>3 次握手，4 次挥手</h2><p>第一次握手(SYN=1, seq=x):</p>
+<p>客户端发送一个 TCP 的 SYN 标志位置 1 的包，指明客户端打算连接的服务器的端口，以及初始序号 X,保存在包头的序列号(Sequence Number)字段里。</p>
+<p>发送完毕后，客户端进入 SYN_SEND 状态。</p>
+<p>第二次握手(SYN=1, ACK=1, seq=y, ACKnum=x+1):</p>
+<p>服务器发回确认包(ACK)应答。即 SYN 标志位和 ACK 标志位均为 1。服务器端选择自己 ISN 序列号，放到 Seq 域里，同时将确认序号(Acknowledgement Number)设置为客户的 ISN 加 1，即 X+1。 发送完毕后，服务器端进入 SYN_RCVD 状态。</p>
+<p>第三次握手(ACK=1，ACKnum=y+1)</p>
+<p>客户端再次发送确认包(ACK)，SYN 标志位为 0，ACK 标志位为 1，并且把服务器发来 ACK 的序号字段+1，放在确定字段中发送给对方，并且在数据段放写 ISN 的+1</p>
+<p>发送完毕后，客户端进入 ESTABLISHED 状态，当服务器端接收到这个包时，也进入 ESTABLISHED 状态，TCP 握手结束。<br>TCP 的连接的拆除需要发送四个包，因此称为四次挥手(Four-way handshake)，也叫做改进的三次握手。客户端或服务器均可主动发起挥手动作，在 socket 编程中，任何一方执行 close() 操作即可产生挥手操作。</p>
+<p>第一次挥手(FIN=1，seq=x)</p>
+<p>假设客户端想要关闭连接，客户端发送一个 FIN 标志位置为 1 的包，表示自己已经没有数据可以发送了，但是仍然可以接受数据。</p>
+<p>发送完毕后，客户端进入 FIN_WAIT_1 状态。</p>
+<p>第二次挥手(ACK=1，ACKnum=x+1)</p>
+<p>服务器端确认客户端的 FIN 包，发送一个确认包，表明自己接受到了客户端关闭连接的请求，但还没有准备好关闭连接。</p>
+<p>发送完毕后，服务器端进入 CLOSE_WAIT 状态，客户端接收到这个确认包之后，进入 FIN_WAIT_2 状态，等待服务器端关闭连接。</p>
+<p>第三次挥手(FIN=1，seq=y)</p>
+<p>服务器端准备好关闭连接时，向客户端发送结束连接请求，FIN 置为 1。</p>
+<p>发送完毕后，服务器端进入 LAST_ACK 状态，等待来自客户端的最后一个 ACK。</p>
+<p>第四次挥手(ACK=1，ACKnum=y+1)</p>
+<p>客户端接收到来自服务器端的关闭请求，发送一个确认包，并进入 TIME_WAIT 状态，等待可能出现的要求重传的 ACK 包。</p>
+<p>服务器端接收到这个确认包之后，关闭连接，进入 CLOSED 状态。</p>
+<p>客户端等待了某个固定时间（两个最大段生命周期，2MSL，2 Maximum Segment Lifetime）之后，没有收到服务器端的 ACK ，认为服务器端已经正常关闭连接，于是自己也关闭连接，进入 CLOSED 状态。<br><a href="https://hit-alibaba.github.io/interview/basic/network/TCP.html">https://hit-alibaba.github.io/interview/basic/network/TCP.html</a></p>
+<p><a href="https://blog.csdn.net/qzcsu/article/details/72861891">https://blog.csdn.net/qzcsu/article/details/72861891</a></p>
+<h2 id="TCP-和-UDP-区别"><a href="#TCP-和-UDP-区别" class="headerlink" title="TCP 和 UDP 区别"></a>TCP 和 UDP 区别</h2><p>TCP (Transmission Control Protocol)和 UDP(User Datagram Protocol)协议属于传输层协议，它们之间的区别包括：<br>TCP 是面向连接的，UDP 是无连接的；<br>TCP 是可靠的，UDP 是不可靠的；<br>TCP 只支持点对点通信，UDP 支持一对一、一对多、多对一、多对多的通信模式；<br>TCP 是面向字节流的，UDP 是面向报文的；<br>TCP 有拥塞控制机制;UDP 没有拥塞控制，适合媒体通信；<br>TCP 首部开销(20 个字节)比 UDP 的首部开销(8 个字节)要大；  </p>
+<h2 id="http-和-https-区别"><a href="#http-和-https-区别" class="headerlink" title="http 和 https 区别"></a>http 和 https 区别</h2><p>Http 协议运行在 TCP 之上，明文传输，客户端与服务器端都无法验证对方的身份；Https 是身披 SSL(Secure Socket Layer)外壳的 Http，运行于 SSL 上，SSL 运行于 TCP 之上，是添加了加密和认证机制的 HTTP。二者之间存在如下不同：<br>端口不同：Http 与 Http 使用不同的连接方式，用的端口也不一样，前者是 80，后者是 443；<br>资源消耗：和 HTTP 通信相比，Https 通信会由于加减密处理消耗更多的 CPU 和内存资源；<br>开销：Https 通信需要证书，而证书一般需要向认证机构购买；　 Https 的加密机制是一种共享密钥加密和公开密钥加密并用的混合加密机制。  </p>
+<h2 id="对称加密与非对称加密"><a href="#对称加密与非对称加密" class="headerlink" title="对称加密与非对称加密"></a>对称加密与非对称加密</h2><p>对称密钥加密是指加密和解密使用同一个密钥的方式，这种方式存在的最大问题就是密钥发送问题，即如何安全地将密钥发给对方；而非对称加密是指使用一对非对称密钥，即公钥和私钥，公钥可以随意发布，但私钥只有自己知道。发送密文的一方使用对方的公钥进行加密处理，对方接收到加密信息后，使用自己的私钥进行解密。<br>　　由于非对称加密的方式不需要发送用来解密的私钥，所以可以保证安全性；但是和对称加密比起来，它非常的慢，所以我们还是要用对称加密来传送消息，但对称加密所使用的密钥我们可以通过非对称加密的方式发送出去。</p>
+<h2 id="http1-0-和-http2-0-区别"><a href="#http1-0-和-http2-0-区别" class="headerlink" title="http1.0 和 http2.0 区别"></a>http1.0 和 http2.0 区别</h2><p>新的二进制格式（Binary Format），HTTP1.x 的解析是基于文本。基于文本协议的格式解析存在天然缺陷，文本的表现形式有多样性，要做到健壮性考虑的场景必然很多，二进制则不同，只认 0 和 1 的组合。基于这种考虑 HTTP2.0 的协议解析决定采用二进制格式，实现方便且健壮。<br>多路复用（MultiPlexing），即连接共享，即每一个 request 都是是用作连接共享机制的。一个 request 对应一个 id，这样一个连接上可以有多个 request，每个连接的 request 可以随机的混杂在一起，接收方可以根据 request 的 id 将 request 再归属到各自不同的服务端请求里面。<br>header 压缩，如上文中所言，对前面提到过 HTTP1.x 的 header 带有大量信息，而且每次都要重复发送，HTTP2.0 使用 encoder 来减少需要传输的 header 大小，通讯双方各自 cache 一份 header fields 表，既避免了重复 header 的传输，又减小了需要传输的大小。<br>服务端推送（server push），同 SPDY 一样，HTTP2.0 也具有 server push 功能。</p>
+<h2 id="Session、Cookie-与-Application"><a href="#Session、Cookie-与-Application" class="headerlink" title="Session、Cookie 与 Application"></a>Session、Cookie 与 Application</h2><p>Cookie：<br>Cookie 和 Session 都是客户端与服务器之间保持状态的解决方案，具体来说，cookie 机制采用的是在客户端保持状态的方案，而 session 机制采用的是在服务器端保持状态的方案。<br>Session：<br>同样地，会话状态也可以保存在服务器端。客户端请求服务器，如果服务器记录该用户状态，就获取 Session 来保存状态，这时，如果服务器已经为此客户端创建过 session，服务器就按照 sessionid 把这个 session 检索出来使用；如果客户端请求不包含 sessionid，则为此客户端创建一个 session 并且生成一个与此 session 相关联的 sessionid，并将这个 sessionid 在本次响应中返回给客户端保存。保存这个 sessionid 的方式可以采用  cookie 机制  ，这样在交互过程中浏览器可以自动的按照规则把这个标识发挥给服务器；若浏览器禁用 Cookie 的话，可以通过  URL 重写机制   将 sessionid 传回服务器。<br>Session 与 Cookie 的对比：<br>实现机制：Session 的实现常常依赖于 Cookie 机制，通过 Cookie 机制回传 SessionID；<br>大小限制：Cookie 有大小限制并且浏览器对每个站点也有 cookie 的个数限制，Session 没有大小限制，理论上只与服务器的内存大小有关；<br>安全性：Cookie 存在安全隐患，通过拦截或本地文件找得到 cookie 后可以进行攻击，而 Session 由于保存在服务器端，相对更加安全；<br>服务器资源消耗：Session 是保存在服务器端上会存在一段时间才会消失，如果 session 过多会增加服务器的压力。<br>Application（ServletContext）：与一个 Web 应用程序相对应，为应用程序提供了一个全局的状态，所有客户都可以使用该状态<br> Application：<br>　　 Application（Java Web 中的 ServletContext）：与一个 Web 应用程序相对应，为应用程序提供了一个全局的状态，所有客户都可以使用该状态。  </p>
+]]></content>
+      <categories>
+        <category>http</category>
+      </categories>
+      <tags>
+        <tag>interview</tag>
+        <tag>http</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>interview/linux</title>
+    <url>/2020/10/10/interview-linux/</url>
+    <content><![CDATA[<h2 id="列举你了解的几个-linux-shell-类型"><a href="#列举你了解的几个-linux-shell-类型" class="headerlink" title="列举你了解的几个 linux shell 类型"></a>列举你了解的几个 linux shell 类型</h2><p>常见的有<br>Bourne Again Shell (简称 bash)、<br>Bourne Shell（简称 sh）、<br>C-Shelll（简称 csh）、<br>Korn Shell（简称 ksh）<br><a href="https://blog.csdn.net/chentiefeng521/article/details/52601311">https://blog.csdn.net/chentiefeng521/article/details/52601311</a></p>
+<h2 id="如何指定-shell-脚本所使用的的-shell-类型"><a href="#如何指定-shell-脚本所使用的的-shell-类型" class="headerlink" title="如何指定 shell 脚本所使用的的 shell 类型"></a>如何指定 shell 脚本所使用的的 shell 类型</h2><p>Shell 第一行加入# /bin/bash</p>
+<h2 id="查看-app-log-的内容的几种方式"><a href="#查看-app-log-的内容的几种方式" class="headerlink" title="查看./app.log 的内容的几种方式"></a>查看./app.log 的内容的几种方式</h2><p>cat ./app.log<br>vi ./app.log<br>more ./app.log</p>
+<h2 id="查看-app-log-的开始-100-行"><a href="#查看-app-log-的开始-100-行" class="headerlink" title="查看./app.log 的开始 100 行"></a>查看./app.log 的开始 100 行</h2><p>head -n 20 filename</p>
+<h2 id="查看-app-log-的最后-100-行"><a href="#查看-app-log-的最后-100-行" class="headerlink" title="查看./app.log 的最后 100 行"></a>查看./app.log 的最后 100 行</h2><p>tail -n 100 ./app.log</p>
+<h2 id="打印-app-log-包含-application-info-的所有行"><a href="#打印-app-log-包含-application-info-的所有行" class="headerlink" title="打印./app.log 包含 application-info 的所有行"></a>打印./app.log 包含 application-info 的所有行</h2><p>cat ./app.log | grep application-info</p>
+<h2 id="查找根目录下所有名为-app-log-的文件（不包含文件夹）"><a href="#查找根目录下所有名为-app-log-的文件（不包含文件夹）" class="headerlink" title="查找根目录下所有名为 app.log 的文件（不包含文件夹）"></a>查找根目录下所有名为 app.log 的文件（不包含文件夹）</h2><p>find / -type f -name ‘app.log’</p>
+<h2 id="Linux-三个权限数字是什么，分别代表什么"><a href="#Linux-三个权限数字是什么，分别代表什么" class="headerlink" title="Linux 三个权限数字是什么，分别代表什么"></a>Linux 三个权限数字是什么，分别代表什么</h2><p>4 读<br>2 写<br>1 执行</p>
+<h2 id="只有拥有者有读写权限。"><a href="#只有拥有者有读写权限。" class="headerlink" title="只有拥有者有读写权限。"></a>只有拥有者有读写权限。</h2><p>-rw——- (600)</p>
+<h2 id="只有拥有者有读写权限；而属组用户和其他用户只有读权限。"><a href="#只有拥有者有读写权限；而属组用户和其他用户只有读权限。" class="headerlink" title="只有拥有者有读写权限；而属组用户和其他用户只有读权限。"></a>只有拥有者有读写权限；而属组用户和其他用户只有读权限。</h2><p>-rw-r–r– (644)</p>
+<h2 id="只有拥有者有读、写、执行权限。"><a href="#只有拥有者有读、写、执行权限。" class="headerlink" title="只有拥有者有读、写、执行权限。"></a>只有拥有者有读、写、执行权限。</h2><p>-rwx—— (700)</p>
+<h2 id="拥有者有读、写、执行权限；而属组用户和其他用户只有读、执行权限。"><a href="#拥有者有读、写、执行权限；而属组用户和其他用户只有读、执行权限。" class="headerlink" title="拥有者有读、写、执行权限；而属组用户和其他用户只有读、执行权限。"></a>拥有者有读、写、执行权限；而属组用户和其他用户只有读、执行权限。</h2><p>-rwxr-xr–x (755)</p>
+<h2 id="拥有者有读、写、执行权限；而属组用户和其他用户只有执行权限。"><a href="#拥有者有读、写、执行权限；而属组用户和其他用户只有执行权限。" class="headerlink" title="拥有者有读、写、执行权限；而属组用户和其他用户只有执行权限。"></a>拥有者有读、写、执行权限；而属组用户和其他用户只有执行权限。</h2><p>-rwx–x–x (711)</p>
+<h2 id="所有用户都有文件读、写权限。"><a href="#所有用户都有文件读、写权限。" class="headerlink" title="所有用户都有文件读、写权限。"></a>所有用户都有文件读、写权限。</h2><p>-rw-rw-rw- (666)</p>
+<h2 id="所有用户都有读、写、执行权限。"><a href="#所有用户都有读、写、执行权限。" class="headerlink" title="所有用户都有读、写、执行权限。"></a>所有用户都有读、写、执行权限。</h2><p>-rwxrwxrwx (777)</p>
+<h2 id="查看当前目录下所有文件的权限"><a href="#查看当前目录下所有文件的权限" class="headerlink" title="查看当前目录下所有文件的权限"></a>查看当前目录下所有文件的权限</h2><p>ls -l</p>
+<h2 id="复制-dic1-文件夹下所有文件和文件夹到-dic2"><a href="#复制-dic1-文件夹下所有文件和文件夹到-dic2" class="headerlink" title="复制 dic1 文件夹下所有文件和文件夹到 dic2"></a>复制 dic1 文件夹下所有文件和文件夹到 dic2</h2><p>cp -rf dic1/* dic2/</p>
+<h2 id="移动当前文件夹下所有文件到上一级文件夹"><a href="#移动当前文件夹下所有文件到上一级文件夹" class="headerlink" title="移动当前文件夹下所有文件到上一级文件夹"></a>移动当前文件夹下所有文件到上一级文件夹</h2><p>mv * ../</p>
+<h2 id="删除当前文件夹无需询问"><a href="#删除当前文件夹无需询问" class="headerlink" title="删除当前文件夹无需询问"></a>删除当前文件夹无需询问</h2><p>rm -rf .</p>
+<h2 id="创建文件夹-abc-cde-efg（多级）"><a href="#创建文件夹-abc-cde-efg（多级）" class="headerlink" title="创建文件夹 ./abc/cde/efg（多级）"></a>创建文件夹 ./abc/cde/efg（多级）</h2><p>mkdir -p ./abc/cde/efg</p>
+<h2 id="写出创建文件的三种方式"><a href="#写出创建文件的三种方式" class="headerlink" title="写出创建文件的三种方式"></a>写出创建文件的三种方式</h2><p>touch aaa.txt<br>vi aaa.txt 保存退出<br>echo ‘’ &gt; aaa.txt</p>
+]]></content>
+      <categories>
+        <category>linux</category>
+      </categories>
+      <tags>
+        <tag>interview</tag>
+        <tag>linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>java 设计模式</title>
     <url>/2020/10/10/java-patterns/</url>
     <content><![CDATA[<ol>
@@ -277,39 +310,6 @@
       </categories>
   </entry>
   <entry>
-    <title>interview/linux</title>
-    <url>/2020/10/10/interview-linux/</url>
-    <content><![CDATA[<h2 id="列举你了解的几个-linux-shell-类型"><a href="#列举你了解的几个-linux-shell-类型" class="headerlink" title="列举你了解的几个 linux shell 类型"></a>列举你了解的几个 linux shell 类型</h2><p>常见的有<br>Bourne Again Shell (简称 bash)、<br>Bourne Shell（简称 sh）、<br>C-Shelll（简称 csh）、<br>Korn Shell（简称 ksh）<br><a href="https://blog.csdn.net/chentiefeng521/article/details/52601311">https://blog.csdn.net/chentiefeng521/article/details/52601311</a></p>
-<h2 id="如何指定-shell-脚本所使用的的-shell-类型"><a href="#如何指定-shell-脚本所使用的的-shell-类型" class="headerlink" title="如何指定 shell 脚本所使用的的 shell 类型"></a>如何指定 shell 脚本所使用的的 shell 类型</h2><p>Shell 第一行加入# /bin/bash</p>
-<h2 id="查看-app-log-的内容的几种方式"><a href="#查看-app-log-的内容的几种方式" class="headerlink" title="查看./app.log 的内容的几种方式"></a>查看./app.log 的内容的几种方式</h2><p>cat ./app.log<br>vi ./app.log<br>more ./app.log</p>
-<h2 id="查看-app-log-的开始-100-行"><a href="#查看-app-log-的开始-100-行" class="headerlink" title="查看./app.log 的开始 100 行"></a>查看./app.log 的开始 100 行</h2><p>head -n 20 filename</p>
-<h2 id="查看-app-log-的最后-100-行"><a href="#查看-app-log-的最后-100-行" class="headerlink" title="查看./app.log 的最后 100 行"></a>查看./app.log 的最后 100 行</h2><p>tail -n 100 ./app.log</p>
-<h2 id="打印-app-log-包含-application-info-的所有行"><a href="#打印-app-log-包含-application-info-的所有行" class="headerlink" title="打印./app.log 包含 application-info 的所有行"></a>打印./app.log 包含 application-info 的所有行</h2><p>cat ./app.log | grep application-info</p>
-<h2 id="查找根目录下所有名为-app-log-的文件（不包含文件夹）"><a href="#查找根目录下所有名为-app-log-的文件（不包含文件夹）" class="headerlink" title="查找根目录下所有名为 app.log 的文件（不包含文件夹）"></a>查找根目录下所有名为 app.log 的文件（不包含文件夹）</h2><p>find / -type f -name ‘app.log’</p>
-<h2 id="Linux-三个权限数字是什么，分别代表什么"><a href="#Linux-三个权限数字是什么，分别代表什么" class="headerlink" title="Linux 三个权限数字是什么，分别代表什么"></a>Linux 三个权限数字是什么，分别代表什么</h2><p>4 读<br>2 写<br>1 执行</p>
-<h2 id="只有拥有者有读写权限。"><a href="#只有拥有者有读写权限。" class="headerlink" title="只有拥有者有读写权限。"></a>只有拥有者有读写权限。</h2><p>-rw——- (600)</p>
-<h2 id="只有拥有者有读写权限；而属组用户和其他用户只有读权限。"><a href="#只有拥有者有读写权限；而属组用户和其他用户只有读权限。" class="headerlink" title="只有拥有者有读写权限；而属组用户和其他用户只有读权限。"></a>只有拥有者有读写权限；而属组用户和其他用户只有读权限。</h2><p>-rw-r–r– (644)</p>
-<h2 id="只有拥有者有读、写、执行权限。"><a href="#只有拥有者有读、写、执行权限。" class="headerlink" title="只有拥有者有读、写、执行权限。"></a>只有拥有者有读、写、执行权限。</h2><p>-rwx—— (700)</p>
-<h2 id="拥有者有读、写、执行权限；而属组用户和其他用户只有读、执行权限。"><a href="#拥有者有读、写、执行权限；而属组用户和其他用户只有读、执行权限。" class="headerlink" title="拥有者有读、写、执行权限；而属组用户和其他用户只有读、执行权限。"></a>拥有者有读、写、执行权限；而属组用户和其他用户只有读、执行权限。</h2><p>-rwxr-xr–x (755)</p>
-<h2 id="拥有者有读、写、执行权限；而属组用户和其他用户只有执行权限。"><a href="#拥有者有读、写、执行权限；而属组用户和其他用户只有执行权限。" class="headerlink" title="拥有者有读、写、执行权限；而属组用户和其他用户只有执行权限。"></a>拥有者有读、写、执行权限；而属组用户和其他用户只有执行权限。</h2><p>-rwx–x–x (711)</p>
-<h2 id="所有用户都有文件读、写权限。"><a href="#所有用户都有文件读、写权限。" class="headerlink" title="所有用户都有文件读、写权限。"></a>所有用户都有文件读、写权限。</h2><p>-rw-rw-rw- (666)</p>
-<h2 id="所有用户都有读、写、执行权限。"><a href="#所有用户都有读、写、执行权限。" class="headerlink" title="所有用户都有读、写、执行权限。"></a>所有用户都有读、写、执行权限。</h2><p>-rwxrwxrwx (777)</p>
-<h2 id="查看当前目录下所有文件的权限"><a href="#查看当前目录下所有文件的权限" class="headerlink" title="查看当前目录下所有文件的权限"></a>查看当前目录下所有文件的权限</h2><p>ls -l</p>
-<h2 id="复制-dic1-文件夹下所有文件和文件夹到-dic2"><a href="#复制-dic1-文件夹下所有文件和文件夹到-dic2" class="headerlink" title="复制 dic1 文件夹下所有文件和文件夹到 dic2"></a>复制 dic1 文件夹下所有文件和文件夹到 dic2</h2><p>cp -rf dic1/* dic2/</p>
-<h2 id="移动当前文件夹下所有文件到上一级文件夹"><a href="#移动当前文件夹下所有文件到上一级文件夹" class="headerlink" title="移动当前文件夹下所有文件到上一级文件夹"></a>移动当前文件夹下所有文件到上一级文件夹</h2><p>mv * ../</p>
-<h2 id="删除当前文件夹无需询问"><a href="#删除当前文件夹无需询问" class="headerlink" title="删除当前文件夹无需询问"></a>删除当前文件夹无需询问</h2><p>rm -rf .</p>
-<h2 id="创建文件夹-abc-cde-efg（多级）"><a href="#创建文件夹-abc-cde-efg（多级）" class="headerlink" title="创建文件夹 ./abc/cde/efg（多级）"></a>创建文件夹 ./abc/cde/efg（多级）</h2><p>mkdir -p ./abc/cde/efg</p>
-<h2 id="写出创建文件的三种方式"><a href="#写出创建文件的三种方式" class="headerlink" title="写出创建文件的三种方式"></a>写出创建文件的三种方式</h2><p>touch aaa.txt<br>vi aaa.txt 保存退出<br>echo ‘’ &gt; aaa.txt</p>
-]]></content>
-      <categories>
-        <category>linux</category>
-      </categories>
-      <tags>
-        <tag>interview</tag>
-        <tag>linux</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>jdk9、jdk10、jdk11、jdk12、jdk13新特性</title>
     <url>/2020/10/10/jdk-new-feature/</url>
     <content><![CDATA[<p>我们绝大部分人估计都还在用着jdk8，12其实是一个非LTS（long time support）版本，而11与8一样是LTS版，意味着下个通用的版本将从8直接到11，毕竟11包含了9和10的所有新特性，因此9和10估计就直接被废弃啦。不过9、10、11、12面向开发者的新特性其实并不是很多，大部分都是一些优化、收集器加强以及增加了一些新功能等等<br>而我们开发人员最为关注的肯定是对我们搬砖有用的特性，虽然可能还用不太上，但这边还是先记录一下从jdk9-12的新特性：</p>
@@ -359,6 +359,45 @@
 ]]></content>
   </entry>
   <entry>
+    <title>契约式编程与防御式编程</title>
+    <url>/2020/10/21/%E5%A5%91%E7%BA%A6%E5%BC%8F%E7%BC%96%E7%A8%8B%E4%B8%8E%E9%98%B2%E5%BE%A1%E5%BC%8F%E7%BC%96%E7%A8%8B/</url>
+    <content><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>事情的来由还要从几十几亿年前的一次星球大爆炸说起，sorry，背错台词了，是从几天前讨论接口返回数据和几个月前讨论课件本地数据结构说起，简单的说，就是碰到约定好的内容出现异常，是我们在程序中内部作兼容处理，还是抛出去。</p>
+<p>打个比方，我们要解析一段json，约定这个json的格式，只能是正常格式，或者是空，那么一旦返回json的方法返回了一个『既不是正常格式，又不是空的异常值』，程序该如何处理呢？</p>
+<p>小花：一旦碰到约定异常，程序必须兼容处理，一定不能让程序Crash<br>小Fa：一旦碰到约定异常，就必须抛出去，告知约定有误，找出具体错误原因</p>
+<p>这个问题，相信只要是程序猿基本都遇到过，举个最常见的栗子，NullPointerException，假如我们要从json中取一个字段，突然发现发生了NullPointerException，一些开发者认为是数据问题，那么把json中的这个字段改正确就行了；还有一些开发者认为是程序问题，认为程序需要做非空判断，再去使用。我相信这两种程序猿都有自己的理由，第一种程序简洁明了，代码逻辑干净，但一旦出错，就会崩溃，第二种程序耐操，随你数据怎么错，我都能不Crash，但代码中到处存在非空判断，臃肿、重复。</p>
+<p>生存还是毁灭，这是一个问题！</p>
+<h2 id="防御式编程"><a href="#防御式编程" class="headerlink" title="防御式编程"></a>防御式编程</h2><p>就在我们为了这个问题而争论的时候，突然有一个姓康的同事，施法祭出了一块砖头（《代码大全2》，近900页，相当于3本《Android群英传》），我一度以为他想砸在我的脸上，正当我准备闪避的时候，他翻到了这块砖头的第八章，几个大字赫然印入了我的视线——『防御式编程』。<br><img src="1.jpeg" style="margin: 0 auto;"></p>
+<p>果然是老司机，居然可以从防御性驾驶中悟出防御性编程，说好的编程不开车，开车不编程呢？</p>
+<p>这位作者编程厉不厉害我不知道，但我知道，论开车，一定没有何老师diao！</p>
+<p>OK，《代码大全》给我们提供了一个定义——『防御式编程』，说白了，就是『人类都是不安全、不值得信任的，所有的人，都会犯错误，而你写的代码，应该考虑到所有可能发生的错误，让你的程序不会因为他人的错误而发生错误』</p>
+<p>在书中，作者告诉我们，程序需要对可能的错误输入，做出兼容，例如一个除法的函数，你必须判断分母可能为0的情况，从而给调用者返回错误提示。另外，一般的高级编程语言，都提供了『断言』和『异常』两种方式来进行错误处理。</p>
+<h2 id="断言"><a href="#断言" class="headerlink" title="断言"></a>断言</h2><p>断言，是一种在开发阶段使用的，让程序在运行时进行自检的代码，断言为真，那么程序运行正常，断言为假，那么程序运行异常退出。等等，防御式编程不是说好的要兼容异常吗，为什么会退出？实际上，作者的意思是，先断言、后处理错误，而断言是在开发环境中的，正式上线后是不会有断言的。<br><img src="2.jpeg" style="margin: 0 auto;"></p>
+<p>但实际上，这是一个悖论，开发阶段的错误处理代码在开发阶段被断言给拦截掉了，但错误处理代码也是人写的，那么如何去检测『错误处理代码可能发生的错误』呢？</p>
+<h2 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h2><p>当代码出现问题时，可以通过抛出异常来进行通知，如果你无法处理，则可以交给外界进行处理。这个不多说，毕竟大部分代码，如果有异常，最简单的就是try catch了，我甚至见过把所以代码直接try catch的，你是有多不相信人类。</p>
+<p>所以我觉得防御式编程用久了，会不会开始怀疑人生，果然，在往后翻几页，作者也给出了建议。<br><img src="3.jpeg" style="margin: 0 auto;"></p>
+<p>借用奇异博士的一句台词——『你TM居然把警告写在咒语的下一页』！</p>
+<p>简而言之，防御式编程，就是持怀疑态度审视所有的代码，但这个和我们讨论的主题还是略有不同的，我们讨论的主题是『已经有了约定，但返回了约定之外的内容』。</p>
+<h2 id="契约式编程"><a href="#契约式编程" class="headerlink" title="契约式编程"></a>契约式编程</h2><p>就在我们讨论的时候，天空突然飘来五个字——那都不是事，哦不对，是『契约式编程』。</p>
+<p>这个好像有点像！我们先来简单的看下什么是契约式编程，简单的说，契约作用于两方，每一方都会完成一些任务，从而促成契约的达成，但同时，每一方也会接受一些义务，作为制定契约的前提，有任意一方无视了必尽义的义务，则契约失败。</p>
+<p>契约式编程要求我们在『前提条件』、『后继条件』和『不变量条件』进行契约的检查。类似的，例如检查参数，一旦参数不对，当即撕毁契约。这一点，现在很多新的语言都支持了，例如Swift，就支持对参数进行约束检查，这就是一种类契约式编程。</p>
+<p>契约所约束的，是『一个为了确保程序正常运行的条件』，一旦契约被损毁，只有一个原因，那就是程序出了Bug，例如一个数据字段，在我处理的时候，必须保证是不为空的，那么谁来保证这一点呢，一定是我的调用方（或者说是其它模块），所以，一旦出现问题，应该有调用方来检查，确保调用的时候，必须是不为空的。</p>
+<p>这让我想到了刚开始在面向日本人编程时期的一些事，日本人的做事风格是出了名的谨慎和详细，每一个方法、函数，在详细设计的时候，就已经把参数、返回值，已经它们的类型和所有可能的值都设计好了，每个方法之间有着明确的界限，如果你的方法因为传入的参数不在设计范围内而导致错误，你完全可以去找调用方，要求他按照设计来进行调用。不得不说，这应该是契约编程的最佳实践。日企普遍使用这种方式其实还有一个原因，那就是可以严格区分责任，让每个人都不必为了迁就他人的错误而进行『艰难的编码』。每个人按照契约处理好自己的事情，让损毁契约的人承担责任。</p>
+<p>再引申一下，这和现在的『面向接口编程』也非常类似，两个模块之间，定义好调用、处理的接口，而具体的实现，对方都不用关心，只要安装协议的接口来进行开发就可以了，但光有接口也不够，还需要契约来做进一步的约束，例如参数、返回值的约束。</p>
+<p>无独有偶，在《代码大全》中，作者也提出了『进攻式编程』，其实和契约编程，有异曲同工之妙。<br><img src="4.jpeg" style="margin: 0 auto;"></p>
+<h2 id="乌托邦"><a href="#乌托邦" class="headerlink" title="乌托邦"></a>乌托邦</h2><p>OK，梦醒了，让阳光照进现实。以上两种编程方式，都是非常理想化的编程，但在一般的公司里面不论是防御还是契约，实现起来都是比较困难的，例如前端与后端的接口、不同部门同事的交流，按照契约式编程，没人Care你的契约，按照防御式编程，代码惨不忍睹，还容易漏掉防御。那么到底该怎么办呢，我认为，如果能在公司层面推广契约式编程，首先是对开发效率的提升，让每个人都对自己写的代码负责，在开发者之间建立良好的信任关系，同时也能减少不必要的沟通成本和精力。但同时，必要的防御式编程也是不能少的，这是保证程序健壮、稳定的前提。怎么说呢，中国人民秉承了千百年的传统——『中庸之道』，契约还是防御，视情况而定，这是平衡的艺术。</p>
+]]></content>
+      <tags>
+        <tag>契约式编程</tag>
+        <tag>防御式编程</tag>
+        <tag>编程思想2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>设计模式/创建型模式/特点和分类</title>
+    <url>/2020/10/10/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%88%9B%E5%BB%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F-%E7%89%B9%E7%82%B9%E5%92%8C%E5%88%86%E7%B1%BB/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>开发原则/开闭原则</title>
     <url>/2020/10/10/%E5%BC%80%E5%8F%91%E5%8E%9F%E5%88%99-%E5%BC%80%E9%97%AD%E5%8E%9F%E5%88%99/</url>
     <content><![CDATA[<p>在软件开发中，为了提高软件系统的可维护性和可复用性，增加软件的可扩展性和灵活性，程序员要尽量根据 7 条原则来开发程序，从而提高软件开发效率、节约软件开发成本和维护成本。我们将在下面的几节中依次来介绍这 7 条原则，本节首先介绍开闭原则。<br>开闭原则的定义<br>开闭原则（Open Closed Principle，OCP）由勃兰特·梅耶（Bertrand Meyer）提出，他在 1988 年的著作《面向对象软件构造》（Object Oriented Software Construction）中提出：软件实体应当对扩展开放，对修改关闭（Software entities should be open for extension，but closed for modification），这就是开闭原则的经典定义。</p>
@@ -374,65 +413,6 @@
 <p>【例1】Windows 的桌面主题设计。</p>
 <p>分析：Windows 的主题是桌面背景图片、窗口颜色和声音等元素的组合。用户可以根据自己的喜爱更换自己的桌面主题，也可以从网上下载新的主题。这些主题有共同的特点，可以为其定义一个抽象类（Abstract Subject），而每个具体的主题（Specific Subject）是其子类。用户窗体可以根据需要选择或者增加新的主题，而不需要修改原代码，所以它是满足开闭原则的，其类图如图 1 所示。<br><img src="2020-10-10-17-31-07.png" style="margin: 0 auto;"></p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>契约式编程与防御式编程</title>
-    <url>/2020/10/21/%E5%A5%91%E7%BA%A6%E5%BC%8F%E7%BC%96%E7%A8%8B%E4%B8%8E%E9%98%B2%E5%BE%A1%E5%BC%8F%E7%BC%96%E7%A8%8B/</url>
-    <content><![CDATA[<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><pre><code>事情的来由还要从几十几亿年前的一次星球大爆炸说起，sorry，背错台词了，是从几天前讨论接口返回数据和几个月前讨论课件本地数据结构说起，简单的说，就是碰到约定好的内容出现异常，是我们在程序中内部作兼容处理，还是抛出去。
-
-打个比方，我们要解析一段json，约定这个json的格式，只能是正常格式，或者是空，那么一旦返回json的方法返回了一个『既不是正常格式，又不是空的异常值』，程序该如何处理呢？</code></pre>
-<p>小花：一旦碰到约定异常，程序必须兼容处理，一定不能让程序Crash<br>小Fa：一旦碰到约定异常，就必须抛出去，告知约定有误，找出具体错误原因</p>
-<pre><code>这个问题，相信只要是程序猿基本都遇到过，举个最常见的栗子，NullPointerException，假如我们要从json中取一个字段，突然发现发生了NullPointerException，一些开发者认为是数据问题，那么把json中的这个字段改正确就行了；还有一些开发者认为是程序问题，认为程序需要做非空判断，再去使用。我相信这两种程序猿都有自己的理由，第一种程序简洁明了，代码逻辑干净，但一旦出错，就会崩溃，第二种程序耐操，随你数据怎么错，我都能不Crash，但代码中到处存在非空判断，臃肿、重复。
-
-生存还是毁灭，这是一个问题！</code></pre>
-<h2 id="防御式编程"><a href="#防御式编程" class="headerlink" title="防御式编程"></a>防御式编程</h2><pre><code>就在我们为了这个问题而争论的时候，突然有一个姓康的同事，施法祭出了一块砖头（《代码大全2》，近900页，相当于3本《Android群英传》），我一度以为他想砸在我的脸上，正当我准备闪避的时候，他翻到了这块砖头的第八章，几个大字赫然印入了我的视线——『防御式编程』。</code></pre>
-<img src="1.jpeg" style="margin: 0 auto;">
-
-
-<pre><code>果然是老司机，居然可以从防御性驾驶中悟出防御性编程，说好的编程不开车，开车不编程呢？</code></pre>
-<p>这位作者编程厉不厉害我不知道，但我知道，论开车，一定没有何老师diao！</p>
-<pre><code>OK，《代码大全》给我们提供了一个定义——『防御式编程』，说白了，就是『人类都是不安全、不值得信任的，所有的人，都会犯错误，而你写的代码，应该考虑到所有可能发生的错误，让你的程序不会因为他人的错误而发生错误』
-
-在书中，作者告诉我们，程序需要对可能的错误输入，做出兼容，例如一个除法的函数，你必须判断分母可能为0的情况，从而给调用者返回错误提示。另外，一般的高级编程语言，都提供了『断言』和『异常』两种方式来进行错误处理。</code></pre>
-<h2 id="断言"><a href="#断言" class="headerlink" title="断言"></a>断言</h2><pre><code>断言，是一种在开发阶段使用的，让程序在运行时进行自检的代码，断言为真，那么程序运行正常，断言为假，那么程序运行异常退出。等等，防御式编程不是说好的要兼容异常吗，为什么会退出？实际上，作者的意思是，先断言、后处理错误，而断言是在开发环境中的，正式上线后是不会有断言的。</code></pre>
-<img src="2.jpeg" style="margin: 0 auto;">
-
-<pre><code>但实际上，这是一个悖论，开发阶段的错误处理代码在开发阶段被断言给拦截掉了，但错误处理代码也是人写的，那么如何去检测『错误处理代码可能发生的错误』呢？</code></pre>
-<h2 id="异常"><a href="#异常" class="headerlink" title="异常"></a>异常</h2><pre><code>当代码出现问题时，可以通过抛出异常来进行通知，如果你无法处理，则可以交给外界进行处理。这个不多说，毕竟大部分代码，如果有异常，最简单的就是try catch了，我甚至见过把所以代码直接try catch的，你是有多不相信人类。
-
-所以我觉得防御式编程用久了，会不会开始怀疑人生，果然，在往后翻几页，作者也给出了建议。</code></pre>
-<img src="3.jpeg" style="margin: 0 auto;">
-
-<pre><code>借用奇异博士的一句台词——『你TM居然把警告写在咒语的下一页』！
-
-简而言之，防御式编程，就是持怀疑态度审视所有的代码，但这个和我们讨论的主题还是略有不同的，我们讨论的主题是『已经有了约定，但返回了约定之外的内容』。</code></pre>
-<h2 id="契约式编程"><a href="#契约式编程" class="headerlink" title="契约式编程"></a>契约式编程</h2><pre><code>就在我们讨论的时候，天空突然飘来五个字——那都不是事，哦不对，是『契约式编程』。
-
-这个好像有点像！我们先来简单的看下什么是契约式编程，简单的说，契约作用于两方，每一方都会完成一些任务，从而促成契约的达成，但同时，每一方也会接受一些义务，作为制定契约的前提，有任意一方无视了必尽义的义务，则契约失败。
-
-契约式编程要求我们在『前提条件』、『后继条件』和『不变量条件』进行契约的检查。类似的，例如检查参数，一旦参数不对，当即撕毁契约。这一点，现在很多新的语言都支持了，例如Swift，就支持对参数进行约束检查，这就是一种类契约式编程。
-
-契约所约束的，是『一个为了确保程序正常运行的条件』，一旦契约被损毁，只有一个原因，那就是程序出了Bug，例如一个数据字段，在我处理的时候，必须保证是不为空的，那么谁来保证这一点呢，一定是我的调用方（或者说是其它模块），所以，一旦出现问题，应该有调用方来检查，确保调用的时候，必须是不为空的。
-
-这让我想到了刚开始在面向日本人编程时期的一些事，日本人的做事风格是出了名的谨慎和详细，每一个方法、函数，在详细设计的时候，就已经把参数、返回值，已经它们的类型和所有可能的值都设计好了，每个方法之间有着明确的界限，如果你的方法因为传入的参数不在设计范围内而导致错误，你完全可以去找调用方，要求他按照设计来进行调用。不得不说，这应该是契约编程的最佳实践。日企普遍使用这种方式其实还有一个原因，那就是可以严格区分责任，让每个人都不必为了迁就他人的错误而进行『艰难的编码』。每个人按照契约处理好自己的事情，让损毁契约的人承担责任。
-
-再引申一下，这和现在的『面向接口编程』也非常类似，两个模块之间，定义好调用、处理的接口，而具体的实现，对方都不用关心，只要安装协议的接口来进行开发就可以了，但光有接口也不够，还需要契约来做进一步的约束，例如参数、返回值的约束。
-
-无独有偶，在《代码大全》中，作者也提出了『进攻式编程』，其实和契约编程，有异曲同工之妙。</code></pre>
-<img src="4.jpeg" style="margin: 0 auto;">
-
-<h2 id="乌托邦"><a href="#乌托邦" class="headerlink" title="乌托邦"></a>乌托邦</h2><pre><code>OK，梦醒了，让阳光照进现实。以上两种编程方式，都是非常理想化的编程，但在一般的公司里面不论是防御还是契约，实现起来都是比较困难的，例如前端与后端的接口、不同部门同事的交流，按照契约式编程，没人Care你的契约，按照防御式编程，代码惨不忍睹，还容易漏掉防御。那么到底该怎么办呢，我认为，如果能在公司层面推广契约式编程，首先是对开发效率的提升，让每个人都对自己写的代码负责，在开发者之间建立良好的信任关系，同时也能减少不必要的沟通成本和精力。但同时，必要的防御式编程也是不能少的，这是保证程序健壮、稳定的前提。怎么说呢，中国人民秉承了千百年的传统——『中庸之道』，契约还是防御，视情况而定，这是平衡的艺术。</code></pre>
-]]></content>
-      <tags>
-        <tag>契约式编程</tag>
-        <tag>防御式编程</tag>
-        <tag>编程思想2</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>设计模式/创建型模式/特点和分类</title>
-    <url>/2020/10/10/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F-%E5%88%9B%E5%BB%BA%E5%9E%8B%E6%A8%A1%E5%BC%8F-%E7%89%B9%E7%82%B9%E5%92%8C%E5%88%86%E7%B1%BB/</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>interview/java</title>
